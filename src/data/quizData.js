@@ -690,81 +690,159 @@ export const quizData = {
       questions: [
         {
           id: 'l3q1',
-          question: 'The levels of an ecosystem from smallest to largest are:',
-          type: 'short_answer',
-          correctAnswer: 'Organism, population, community, ecosystem'
+          question: 'What are the levels of an ecosystem from smallest to largest?',
+          type: 'multiple_choice',
+          options: [
+            'Organism, population, community, ecosystem',
+            'Population, organism, ecosystem, community',
+            'Community, population, organism, ecosystem',
+            'Ecosystem, community, population, organism'
+          ],
+          correctAnswer: 0
         },
         {
           id: 'l3q2',
-          question: 'The members of one species living in a particular area is a:',
-          type: 'short_answer',
-          correctAnswer: 'Population'
+          question: 'What is a population?',
+          type: 'multiple_choice',
+          options: [
+            'All living things in an area',
+            'The members of one species living in a particular area',
+            'A group of different species',
+            'The non-living parts of an environment'
+          ],
+          correctAnswer: 1
         },
         {
           id: 'l3q3',
-          question: 'All the different populations that live together in an area make up a:',
-          type: 'short_answer',
-          correctAnswer: 'Community'
+          question: 'What is a community?',
+          type: 'multiple_choice',
+          options: [
+            'A single species in an area',
+            'All the different populations that live together in an area',
+            'The non-living parts of an environment',
+            'A group of ecosystems'
+          ],
+          correctAnswer: 1
         },
         {
           id: 'l3q4',
-          question: 'The community of organisms that live in a particular area along with their non-living environment make up an:',
-          type: 'short_answer',
-          correctAnswer: 'Ecosystem'
+          question: 'What is an ecosystem?',
+          type: 'multiple_choice',
+          options: [
+            'A group of the same species',
+            'All living things in an area',
+            'The community of organisms that live in a particular area along with their non-living environment',
+            'The non-living parts of an environment'
+          ],
+          correctAnswer: 2
         },
         {
           id: 'l3q5',
-          question: 'A __________ provides things such as food, water, shelter, and other things an organism needs to survive.',
-          type: 'fill_in_the_blank',
-          correctAnswer: ['Habitat']
+          question: 'What is a habitat?',
+          type: 'multiple_choice',
+          options: [
+            'A place where animals sleep',
+            'A place that provides things such as food, water, shelter, and other things an organism needs to survive',
+            'A type of ecosystem',
+            'A group of populations'
+          ],
+          correctAnswer: 1
         },
         {
           id: 'l3q6',
-          question: '__________ factors are living things in an environment that interact with an organism. Examples of these factors are animals, __________, and __________.',
-          type: 'fill_in_the_blank',
-          correctAnswer: ['Biotic', 'plants', 'fungi']
+          question: 'What are biotic factors?',
+          type: 'multiple_choice',
+          options: [
+            'Non-living things in an environment',
+            'Living things in an environment that interact with an organism',
+            'The weather in an area',
+            'The rocks and soil in an area'
+          ],
+          correctAnswer: 1
         },
         {
           id: 'l3q7',
-          question: '__________ factors are non-living things in an environment that interact with an organism. Examples of these factors are __________, __________, __________, __________, and __________.',
-          type: 'fill_in_the_blank',
-          correctAnswer: ['Abiotic', 'water', 'rocks', 'sunlight', 'air', 'temperature']
+          question: 'What are abiotic factors?',
+          type: 'multiple_choice',
+          options: [
+            'Living things in an environment',
+            'Non-living things in an environment that interact with an organism',
+            'Plants and animals in an area',
+            'The food chain in an ecosystem'
+          ],
+          correctAnswer: 1
         },
         {
           id: 'l3q8',
-          question: 'The study of how living things interact with each other and their environment is called:',
-          type: 'short_answer',
-          correctAnswer: 'Ecology'
+          question: 'What is ecology?',
+          type: 'multiple_choice',
+          options: [
+            'The study of rocks',
+            'The study of weather',
+            'The study of how living things interact with each other and their environment',
+            'The study of space'
+          ],
+          correctAnswer: 2
         },
         {
           id: 'l3q9',
-          question: 'A __________ is an organism that can make its own food while a __________ obtains energy by feeding on other organisms.',
-          type: 'fill_in_the_blank',
-          correctAnswer: ['Producer', 'consumer']
+          question: 'What is the difference between a producer and a consumer?',
+          type: 'multiple_choice',
+          options: [
+            'A producer eats other organisms, while a consumer makes its own food',
+            'A producer makes its own food, while a consumer obtains energy by feeding on other organisms',
+            'A producer is a plant, while a consumer is an animal',
+            'A producer is an animal, while a consumer is a plant'
+          ],
+          correctAnswer: 1
         },
         {
           id: 'l3q10',
-          question: 'Only about __________ percent of the energy at one level of a food web is available to the next higher level.',
-          type: 'fill_in_the_blank',
-          correctAnswer: ['10']
+          question: 'How much energy is typically transferred from one level of a food web to the next?',
+          type: 'multiple_choice',
+          options: [
+            'About 50%',
+            'About 25%',
+            'About 10%',
+            'About 75%'
+          ],
+          correctAnswer: 2
         },
         {
           id: 'l3q11',
-          question: 'Organisms such as __________, __________, and __________ are __________ which break down biotic waste and dead organisms.',
-          type: 'fill_in_the_blank',
-          correctAnswer: ['Fungus', 'bacteria', 'mold', 'decomposers']
+          question: 'What are decomposers?',
+          type: 'multiple_choice',
+          options: [
+            'Organisms that make their own food',
+            'Organisms that eat other organisms',
+            'Organisms such as fungus, bacteria, and mold that break down biotic waste and dead organisms',
+            'Organisms that live in water'
+          ],
+          correctAnswer: 2
         },
         {
           id: 'l3q12',
-          question: 'An __________ shows the amount of __________ that moves from one feeding level to another in a food web.',
-          type: 'fill_in_the_blank',
-          correctAnswer: ['Energy pyramid', 'energy']
+          question: 'What is an energy pyramid?',
+          type: 'multiple_choice',
+          options: [
+            'A pyramid made of energy',
+            'A diagram that shows the amount of energy that moves from one feeding level to another in a food web',
+            'A type of food chain',
+            'A group of producers'
+          ],
+          correctAnswer: 1
         },
         {
           id: 'l3q13',
-          question: 'A series of events in which one organism eats another is a __________. A __________ consists of many overlapping food chains.',
-          type: 'fill_in_the_blank',
-          correctAnswer: ['Food chain', 'food web']
+          question: 'What is the difference between a food chain and a food web?',
+          type: 'multiple_choice',
+          options: [
+            'A food chain is longer than a food web',
+            'A food chain consists of many overlapping food chains',
+            'A food web is a series of events in which one organism eats another, while a food chain consists of many overlapping food chains',
+            'A food chain is a series of events in which one organism eats another, while a food web consists of many overlapping food chains'
+          ],
+          correctAnswer: 3
         }
       ]
     }
