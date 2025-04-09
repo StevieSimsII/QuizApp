@@ -4,6 +4,7 @@ on:
   push:
     branches: [ master ]
 
+# This workflow will build and deploy the React app to GitHub Pages
 permissions:
   contents: write
 
