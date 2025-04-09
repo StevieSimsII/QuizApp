@@ -71,11 +71,7 @@ function Quiz({ lesson, onComplete, onRestart, isComplete, score }) {
         {!isCorrect && (
           <div className="mt-2">
             <p className="font-medium">The correct answer is:</p>
-            {currentQuestion.type === 'multiple_choice' ? (
-              <p className="text-gray-800">{currentQuestion.options[currentQuestion.correctAnswer]}</p>
-            ) : (
-              <p className="text-gray-800">{currentQuestion.correctAnswer ? 'True' : 'False'}</p>
-            )}
+            <p className="text-gray-800">{currentQuestion.options[currentQuestion.correctAnswer]}</p>
           </div>
         )}
       </div>
@@ -153,49 +149,21 @@ function Quiz({ lesson, onComplete, onRestart, isComplete, score }) {
       <div className="bg-white p-6 rounded-lg shadow-sm">
         <p className="text-lg mb-4">{currentQuestion.question}</p>
         <div className="space-y-2">
-          {currentQuestion.type === 'multiple_choice' ? (
-            currentQuestion.options.map((option, index) => (
-              <button
-                key={index}
-                onClick={() => handleAnswer(index)}
-                disabled={showFeedback}
-                className={`w-full p-3 text-left rounded-lg transition-colors duration-200 ${
-                  answers[currentQuestion.id] === index
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'bg-gray-50 hover:bg-gray-100'
-                } ${showFeedback ? 'cursor-default' : 'cursor-pointer'}`}
-              >
-                {option}
-              </button>
-            ))
-          ) : (
-            <div className="grid grid-cols-2 gap-4">
-              <button
-                onClick={() => handleAnswer(true)}
-                disabled={showFeedback}
-                className={`p-3 rounded-lg transition-colors duration-200 ${
-                  answers[currentQuestion.id] === true
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'bg-gray-50 hover:bg-gray-100'
-                } ${showFeedback ? 'cursor-default' : 'cursor-pointer'}`}
-              >
-                True
-              </button>
-              <button
-                onClick={() => handleAnswer(false)}
-                disabled={showFeedback}
-                className={`p-3 rounded-lg transition-colors duration-200 ${
-                  answers[currentQuestion.id] === false
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'bg-gray-50 hover:bg-gray-100'
-                } ${showFeedback ? 'cursor-default' : 'cursor-pointer'}`}
-              >
-                False
-              </button>
-            </div>
-          )}
+          {currentQuestion.options.map((option, index) => (
+            <button
+              key={index}
+              onClick={() => handleAnswer(index)}
+              disabled={showFeedback}
+              className={`w-full p-3 text-left rounded-lg transition-colors duration-200 ${
+                answers[currentQuestion.id] === index
+                  ? 'bg-blue-100 text-blue-700'
+                  : 'bg-gray-50 hover:bg-gray-100'
+              } ${showFeedback ? 'cursor-default' : 'cursor-pointer'}`}
+            >
+              {option}
+            </button>
+          ))}
         </div>
-        
         {renderFeedback()}
       </div>
 
