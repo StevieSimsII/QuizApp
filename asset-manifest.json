@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Science_Test/static/css/main.3c724454.css",
+    "main.js": "/Science_Test/static/js/main.153cd34d.js",
+    "index.html": "/Science_Test/index.html",
+    "main.3c724454.css.map": "/Science_Test/static/css/main.3c724454.css.map",
+    "main.153cd34d.js.map": "/Science_Test/static/js/main.153cd34d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c724454.css",
+    "static/js/main.153cd34d.js"
+  ]
+}
