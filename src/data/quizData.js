@@ -1168,6 +1168,1110 @@ export const quizData = {
             'It was a tradition in their family'
           ],
           correctAnswer: 1
+        },
+        {
+          id: 'l3q11',
+          question: 'Why was it awkward for a Nisei to visit Japan at that time?',
+          type: 'multiple_choice',
+          options: [
+            'They didn\'t speak Japanese',
+            'They were American-born Japanese visiting a defeated homeland',
+            'They were not welcome in Japan',
+            'They had never been to Japan before'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q12',
+          question: 'What gift did Woody bring and what was the reaction?',
+          type: 'multiple_choice',
+          options: [
+            'Money - she was grateful',
+            'Sugar - Toyo was grateful but embarrassed',
+            'Clothes - she was happy',
+            'Food - she was surprised'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q13',
+          question: 'What is revealed about Toyo and Papa?',
+          type: 'multiple_choice',
+          options: [
+            'They were siblings',
+            'She was his favorite aunt and helped him travel to Hawaii',
+            'They were childhood friends',
+            'They had never met before'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q14',
+          question: 'What does Woody realize about Papa and himself?',
+          type: 'multiple_choice',
+          options: [
+            'They are very different',
+            'He sees and appreciates their similarities',
+            'He doesn\'t understand Papa',
+            'They have nothing in common'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q15',
+          question: 'How did the family return to Los Angeles?',
+          type: 'multiple_choice',
+          options: [
+            'By train',
+            'Papa bought a Nash sedan and made three trips',
+            'By bus',
+            'They walked'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q16',
+          question: 'What problems did they face while traveling?',
+          type: 'multiple_choice',
+          options: [
+            'They got lost',
+            'It took multiple trips over four days',
+            'The car broke down',
+            'They ran out of money'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q17',
+          question: 'How long were they at Manzanar?',
+          type: 'multiple_choice',
+          options: [
+            'About 1 year',
+            'About 2 years',
+            'About 3½ years, from March 1942 to October 1945',
+            'About 5 years'
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 'l3q18',
+          question: 'Where did the Wakatsukis live after returning, and who helped?',
+          type: 'multiple_choice',
+          options: [
+            'In a hotel, helped by the government',
+            'In the Cabrillo Homes, helped by the American Friends Service',
+            'With relatives, helped by family',
+            'In a church, helped by the priest'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q19',
+          question: 'What seemed luxurious in the new housing?',
+          type: 'multiple_choice',
+          options: [
+            'A television',
+            'An indoor toilet and more space',
+            'A kitchen',
+            'A backyard'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q20',
+          question: 'What happened to their stored furnishings?',
+          type: 'multiple_choice',
+          options: [
+            'They were returned in perfect condition',
+            'They were likely stolen or sold',
+            'They were donated to charity',
+            'They were destroyed in a fire'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q21',
+          question: 'What project did Papa work on?',
+          type: 'multiple_choice',
+          options: [
+            'A fishing business',
+            'A cooperative housing plan, though it never materialized',
+            'A restaurant',
+            'A farm'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q22',
+          question: 'How did Mama maintain her dignity?',
+          type: 'multiple_choice',
+          options: [
+            'By working hard',
+            'She carefully dressed and groomed before working at the cannery',
+            'By helping others',
+            'By staying positive'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q23',
+          question: 'Where did Jeanne face prejudice after returning?',
+          type: 'multiple_choice',
+          options: [
+            'At work',
+            'In public school',
+            'In stores',
+            'In church'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q24',
+          question: 'What grade is Jeanne in?',
+          type: 'multiple_choice',
+          options: [
+            '4th grade',
+            '5th grade',
+            '6th grade',
+            '7th grade'
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 'l3q25',
+          question: 'What surprising comment is made to Jeanne on the first day of class?',
+          type: 'multiple_choice',
+          options: [
+            'You look different',
+            'Gee, I didn\'t know you could speak English',
+            'Where are you from?',
+            'You\'re very quiet'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q26',
+          question: 'What does this comment reveal to Jeanne?',
+          type: 'multiple_choice',
+          options: [
+            'People are curious about her',
+            'Non-Japanese might assume she\'s foreign or not American',
+            'People are friendly',
+            'People are ignorant'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q27',
+          question: 'What is the "double impulse" Jeanne describes?',
+          type: 'multiple_choice',
+          options: [
+            'To run and hide',
+            'The desire to disappear and the need to be accepted',
+            'To fight or flee',
+            'To cry or laugh'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q28',
+          question: 'What does Jeanne mean by "not seeing individuals"?',
+          type: 'multiple_choice',
+          options: [
+            'People are invisible',
+            'Authorities treated all Japanese as the same, ignoring personal qualities',
+            'People are all the same',
+            'No one is special'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q29',
+          question: 'In what areas was Jeanne allowed to excel?',
+          type: 'multiple_choice',
+          options: [
+            'Only in sports',
+            'Only in academics',
+            'Scholarship, athletics, yearbook, newspaper, and student government',
+            'Only in music'
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 'l3q30',
+          question: 'In what areas was she blocked?',
+          type: 'multiple_choice',
+          options: [
+            'In all areas',
+            'Only in sports',
+            'Visiting classmates\' homes, joining Girl Scouts, being a majorette',
+            'Only in academics'
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 'l3q31',
+          question: 'What do we know about Radine?',
+          type: 'multiple_choice',
+          options: [
+            'She was from New York',
+            'She was from Texas, lived in Cabrillo Homes, and became Jeanne\'s friend',
+            'She was from California',
+            'She was from Japan'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q32',
+          question: 'How does Jeanne react when she\'s told she can\'t join the Girl Scouts?',
+          type: 'multiple_choice',
+          options: [
+            'She gets angry',
+            'She hides her feelings and responds politely',
+            'She cries',
+            'She protests'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q33',
+          question: 'How does baton twirling help Jeanne?',
+          type: 'multiple_choice',
+          options: [
+            'It makes her popular',
+            'It gives her a way to be involved outside school and get recognition',
+            'It helps her make friends',
+            'It keeps her busy'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q34',
+          question: 'What does Jeanne mean by "Miss America of 1947" vs. "Miss Hiroshima of 1904"?',
+          type: 'multiple_choice',
+          options: [
+            'She wanted to be famous',
+            'She wanted to be modern and American, while Papa wanted her to be traditional and Japanese',
+            'She wanted to be beautiful',
+            'She wanted to be successful'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q35',
+          question: 'What are Papa\'s reactions to Woody\'s return?',
+          type: 'multiple_choice',
+          options: [
+            'He is angry',
+            'He is proud but feels diminished because he now relies on Woody',
+            'He is indifferent',
+            'He is happy'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q36',
+          question: 'Why does Papa\'s bow at the PTA dinner humiliate Jeanne?',
+          type: 'multiple_choice',
+          options: [
+            'It looks silly',
+            'It highlights his Japanese identity, which makes her feel more foreign',
+            'It is too formal',
+            'It is too casual'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q37',
+          question: 'What did Jeanne and Radine have in common in junior high?',
+          type: 'multiple_choice',
+          options: [
+            'They were both good students',
+            'They both lived in Cabrillo Homes, were majorettes, and came from modest families',
+            'They were both popular',
+            'They were both athletes'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q38',
+          question: 'When did their relationship change?',
+          type: 'multiple_choice',
+          options: [
+            'In elementary school',
+            'In high school, when Radine joined social groups Jeanne could not',
+            'In college',
+            'After graduation'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q39',
+          question: 'What obstacle almost prevented Jeanne from becoming a majorette?',
+          type: 'multiple_choice',
+          options: [
+            'Her grades',
+            'The band director had to ask permission to allow an Asian girl to join',
+            'Her parents',
+            'Her schedule'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q40',
+          question: 'Why did Jeanne avoid dating?',
+          type: 'multiple_choice',
+          options: [
+            'She was too busy',
+            'She was ashamed of her living situation and feared Papa\'s reaction',
+            'She wasn\'t interested',
+            'Her parents forbade it'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q41',
+          question: 'Why did the family move to San Jose?',
+          type: 'multiple_choice',
+          options: [
+            'For better schools',
+            'Papa got a chance to lease land for farming',
+            'For a new job',
+            'To be closer to family'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q42',
+          question: 'Why did Jeanne decide to "go exotic" for carnival queen? Was it effective?',
+          type: 'multiple_choice',
+          options: [
+            'To fit in - no',
+            'To stand out - and yes, the crowd cheered more for her',
+            'To please her parents - no',
+            'To be different - yes'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q43',
+          question: 'In what way was Leonard Rodriguez heroic, and what may have been his motive?',
+          type: 'multiple_choice',
+          options: [
+            'He helped her study - friendship',
+            'He stopped adults from cheating in the vote and may have had a crush on Jeanne',
+            'He defended her - kindness',
+            'He gave her advice - concern'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q44',
+          question: 'What was Papa\'s reaction to Jeanne being carnival queen, and what was his condition?',
+          type: 'multiple_choice',
+          options: [
+            'He was proud - healthy',
+            'He was outraged and insisted she take odori lessons to become more traditional',
+            'He was indifferent - sick',
+            'He was happy - well'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q45',
+          question: 'What realization does Jeanne have about Mama?',
+          type: 'multiple_choice',
+          options: [
+            'She was strict',
+            'She understands Mama had always been supportive of her',
+            'She was distant',
+            'She was traditional'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q46',
+          question: 'What emphasizes the social divide between Jeanne and Lois Carson?',
+          type: 'multiple_choice',
+          options: [
+            'Their grades',
+            'Lois made others compliment Jeanne\'s dress and didn\'t invite her to the party',
+            'Their clothes',
+            'Their families'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q47',
+          question: 'How did Jeanne both succeed and fail in being accepted?',
+          type: 'multiple_choice',
+          options: [
+            'She failed completely',
+            'She failed to fit in completely, but succeeded by finishing college and marrying outside her race',
+            'She succeeded completely',
+            'She succeeded partially'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q48',
+          question: 'How long had Mama been deceased when Jeanne returned to Manzanar?',
+          type: 'multiple_choice',
+          options: [
+            'Five years',
+            'Seven years',
+            'Ten years',
+            'Three years'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q49',
+          question: 'How long did Papa live after leaving Manzanar?',
+          type: 'multiple_choice',
+          options: [
+            'Five years',
+            'Ten years',
+            'Twelve years, though Jeanne felt his life ended at Manzanar',
+            'Fifteen years'
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 'l3q50',
+          question: 'What happened to Kiyo and Jeanne at a Long Beach bus stop? How did they react?',
+          type: 'multiple_choice',
+          options: [
+            'They were ignored - they were angry',
+            'A woman spat on them and called them "dirty Japs." They walked home in silence',
+            'They were helped - they were grateful',
+            'They were questioned - they were confused'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q51',
+          question: 'What effect did meeting the photographer have on Jeanne?',
+          type: 'multiple_choice',
+          options: [
+            'It made her angry',
+            'It helped her reconnect with and process her memories of Manzanar',
+            'It made her sad',
+            'It made her forget'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q52',
+          question: 'What did Jeanne\'s family find during their 1972 visit to the Manzanar site?',
+          type: 'multiple_choice',
+          options: [
+            'Nothing',
+            'Ruins, a green auditorium, rock gardens, pear trees, and the obelisk',
+            'A new building',
+            'A memorial'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q53',
+          question: 'What was the purpose of the obelisk, and what was written on it?',
+          type: 'multiple_choice',
+          options: [
+            'It marked the entrance - "Welcome to Manzanar"',
+            'It was a memorial for the dead, inscribed "A Memorial to the Dead"',
+            'It was a signpost - "Manzanar"',
+            'It was a monument - "Never Forget"'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q54',
+          question: 'What literary device is used in: "We watched until the boats became a row of tiny white gulls on the horizons."',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – Boats are compared to gulls to emphasize their distant disappearance',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q55',
+          question: 'What literary device is used in: "Secondhand dealers had been prowling around for weeks, like wolves…"',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – The dealers are compared to wolves for their predatory behavior',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q56',
+          question: 'What literary device is used in: "An outdoor chow line snaked around a half-finished building…"',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – The line is compared to a snake due to its winding form',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q57',
+          question: 'What literary device is used in: "A skin of sand covered the floor."',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – Sand is compared to skin for its complete coverage',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q58',
+          question: 'What literary device is used in: "We were a band of Charlie Chaplins marooned in the California desert."',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – Evacuees are compared to the comically ill-equipped figure',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q59',
+          question: 'What literary device is used in: "All twelve bowls were erupting like a row of tiny volcanoes."',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – The toilets are compared to volcanoes due to the eruption imagery',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q60',
+          question: 'What literary device is used in: "A straight, polished maple limb spotted with dark lidded eyes…"',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor/Personification – The cane is described with human traits',
+            'Hyperbole',
+            'Alliteration'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q61',
+          question: 'What literary device is used in: "He exiled himself, like a leper…"',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – Papa\'s isolation is compared to the social banishment of lepers',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q62',
+          question: 'What literary device is used in: "Papa was now limping… like a caged animal…"',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – His restless pacing is compared to a wild, trapped animal',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q63',
+          question: 'What literary device is used in: "This was like bloodying the nose of God."',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – Striking Papa is compared to assaulting a godlike figure',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q64',
+          question: 'What literary device is used in: "A skin of living vegetation began to show on the stone."',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – Vegetation is described as skin to show complete coverage',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q65',
+          question: 'What literary device is used in: "That bonnet a yellow flower wavering in the glare."',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – The bonnet is likened to a delicate flower',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q66',
+          question: 'What literary device is used in: "Stars so thick and close… I could have reached up and scooped out an armful."',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor',
+            'Personification',
+            'Hyperbole – Emphasizes the proximity and abundance of stars'
+          ],
+          correctAnswer: 3
+        },
+        {
+          id: 'l3q67',
+          question: 'What literary device is used in: "Stories… grew in our minds like tumors."',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – Harmful rumors are compared to cancerous growths',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q68',
+          question: 'What literary device is used in: "The camp itself… disintegrating… to comply…"',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor',
+            'Personification – The camp is described as choosing to fall apart',
+            'Hyperbole'
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 'l3q69',
+          question: 'What literary device is used in: "Gravestones tilt crazily, as if trying to wrench loose…"',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor',
+            'Personification – Gravestones seem to struggle free of the earth',
+            'Hyperbole'
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 'l3q70',
+          question: 'What literary device is used in: "It was the bomb… like an earthquake…"',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – The bomb\'s impact is likened to an earth-shattering quake',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q71',
+          question: 'What literary device is used in: "The house… a clean, swept, airy skeleton."',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – Describes the emptiness and loss inside the house',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q72',
+          question: 'What literary device is used in: "So light against him it\'s like being covered with warm air…"',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – The blanket is compared to warm air for its gentleness',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q73',
+          question: 'What literary device is used in: "He has kept open a little door of doubt."',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – Doubt is described as a doorway in his mind',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q74',
+          question: 'What literary device is used in: "Let the black weight of sleep settle…"',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – Sleep is compared to a heavy force overtaking him',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q75',
+          question: 'What literary device is used in: "Hate… a dark, amorphous cloud that would descend…"',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – Hate is compared to an enveloping storm cloud',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q76',
+          question: 'What literary device is used in: "Each stone was a mouth, speaking for a family…"',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor/Personification – Stones symbolize expression and memory',
+            'Hyperbole',
+            'Alliteration'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q77',
+          question: 'What literary device is used in: "A faucet… like some subterranean periscope."',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – The faucet is compared to a periscope jutting from the sand',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q78',
+          question: 'What literary device is used in: "Manzanar would always live in my nervous system, a needle…"',
+          type: 'multiple_choice',
+          options: [
+            'Simile',
+            'Metaphor – Manzanar is compared to a lingering source of pain',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q79',
+          question: 'What literary device is used in: "Honks… like a boxer working out on a flabby punching bag."',
+          type: 'multiple_choice',
+          options: [
+            'Metaphor',
+            'Simile – The noise of flat tires is compared to weak punches',
+            'Personification',
+            'Hyperbole'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q80',
+          question: 'What does "Valediction" mean?',
+          type: 'multiple_choice',
+          options: [
+            'A greeting',
+            'A farewell statement or oration',
+            'A celebration',
+            'A memory'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q81',
+          question: 'What does "Taut" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Loose',
+            'Pulled tight, not slack',
+            'Broken',
+            'Old'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q82',
+          question: 'What does "Portal" mean?',
+          type: 'multiple_choice',
+          options: [
+            'A small door',
+            'A large and often impressive doorway or gate',
+            'A window',
+            'A path'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q83',
+          question: 'What does "Tranquility" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Chaos',
+            'A state of calm and peace',
+            'Excitement',
+            'Sadness'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q84',
+          question: 'What does "Volition" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Force',
+            'The power or act of making one\'s own choices',
+            'Strength',
+            'Will'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q85',
+          question: 'What does "Benevolent" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Mean',
+            'Kind and well-meaning',
+            'Strong',
+            'Weak'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q86',
+          question: 'What does "Conjure" mean?',
+          type: 'multiple_choice',
+          options: [
+            'To forget',
+            'To bring to mind',
+            'To create',
+            'To destroy'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q87',
+          question: 'What does "Guileless" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Deceitful',
+            'Sincere and without deceit',
+            'Clever',
+            'Dishonest'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q88',
+          question: 'What does "Acquiescence" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Resistance',
+            'Passive acceptance or submission',
+            'Anger',
+            'Joy'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q89',
+          question: 'What does "Prevail" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Fail',
+            'To triumph or dominate',
+            'Lose',
+            'Quit'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q90',
+          question: 'What does "Oblige" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Refuse',
+            'To feel bound to do something',
+            'Deny',
+            'Ignore'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q91',
+          question: 'What does "Prestigious" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Common',
+            'Respected or esteemed',
+            'Ordinary',
+            'Simple'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q92',
+          question: 'What does "Mortify" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Please',
+            'To deeply embarrass or shame',
+            'Delight',
+            'Amuse'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q93',
+          question: 'What does "Dilemma" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Solution',
+            'A difficult choice between two options',
+            'Answer',
+            'Question'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q94',
+          question: 'What does "Thwart" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Help',
+            'To block or frustrate',
+            'Support',
+            'Assist'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q95',
+          question: 'What does "Tippling" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Eating',
+            'Drinking alcohol frequently but in small quantities',
+            'Sleeping',
+            'Walking'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q96',
+          question: 'What does "Sarong" mean?',
+          type: 'multiple_choice',
+          options: [
+            'A hat',
+            'A skirt-like wraparound garment',
+            'A shirt',
+            'A coat'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q97',
+          question: 'What does "Stifling" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Cool',
+            'Suffocating or oppressively hot/close',
+            'Comfortable',
+            'Pleasant'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q98',
+          question: 'What does "Emulate" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Ignore',
+            'To imitate with the goal of matching or surpassing',
+            'Forget',
+            'Reject'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q99',
+          question: 'What does "Commune" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Fight',
+            'To share deep thoughts or feelings',
+            'Argue',
+            'Disagree'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q100',
+          question: 'What does "Interim" mean?',
+          type: 'multiple_choice',
+          options: [
+            'End',
+            'The intervening time',
+            'Beginning',
+            'Middle'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q101',
+          question: 'What does "Suffice" mean?',
+          type: 'multiple_choice',
+          options: [
+            'Fail',
+            'To be enough or adequate',
+            'Lack',
+            'Need'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q102',
+          question: 'What does "Obelisk" mean?',
+          type: 'multiple_choice',
+          options: [
+            'A small stone',
+            'A tall, four-sided stone pillar, often commemorative',
+            'A building',
+            'A statue'
+          ],
+          correctAnswer: 1
         }
       ]
     }
