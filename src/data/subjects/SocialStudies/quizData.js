@@ -169,6 +169,116 @@ const socialStudiesQuizData = {
             "Peace negotiations"
           ],
           correctAnswer: 0
+        },
+        {
+          id: "l2q16",
+          question: "What is the correct order of events leading up to the Battle of Britain?",
+          options: [
+            "Germany invaded Poland, Britain and France declared war, Germany and Italy attacked France, France surrendered, Hitler invaded neighboring nations",
+            "Germany attacked France first, then Poland, then Britain",
+            "Britain declared war first, then Germany invaded Poland",
+            "France surrendered first, then Germany invaded Poland"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q17",
+          question: "What was the name of the policy that gave Germany the Sudetenland?",
+          options: [
+            "Appeasement",
+            "Containment",
+            "Isolationism",
+            "Expansionism"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q18",
+          question: "What was the main purpose of the Munich Agreement?",
+          options: [
+            "To prevent war by giving in to some of Hitler's demands",
+            "To start World War II",
+            "To divide Europe between Germany and Britain",
+            "To create a new European government"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q19",
+          question: "What was the significance of the Battle of Britain?",
+          options: [
+            "It was the first major battle fought entirely by air forces",
+            "It was the first use of atomic weapons",
+            "It was the first naval battle of the war",
+            "It was the first use of tanks in warfare"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q20",
+          question: "What was the main purpose of the Lend-Lease Act?",
+          options: [
+            "To provide military aid to allies without immediate payment",
+            "To sell weapons to Germany",
+            "To build up American military forces",
+            "To create new military bases"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q21",
+          question: "What was the significance of the Atlantic Charter?",
+          options: [
+            "It outlined the goals for the post-war world",
+            "It declared war on Germany",
+            "It created the United Nations",
+            "It divided Europe into zones of control"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q22",
+          question: "What was the main purpose of the Manhattan Project?",
+          options: [
+            "To develop atomic weapons",
+            "To build military bases",
+            "To create new military strategies",
+            "To develop new aircraft"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q23",
+          question: "What was the significance of the Yalta Conference?",
+          options: [
+            "It planned the post-war reorganization of Europe",
+            "It declared war on Japan",
+            "It created the United Nations",
+            "It ended World War II"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q24",
+          question: "What was the main purpose of the Nuremberg Trials?",
+          options: [
+            "To prosecute Nazi war criminals",
+            "To divide Germany",
+            "To create new laws",
+            "To rebuild Europe"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q25",
+          question: "What was the significance of the Marshall Plan?",
+          options: [
+            "It provided economic aid to rebuild Europe",
+            "It created new military alliances",
+            "It divided Germany",
+            "It ended the Cold War"
+          ],
+          correctAnswer: 0
         }
       ]
     }

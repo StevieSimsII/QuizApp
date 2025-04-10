@@ -169,6 +169,116 @@ const englishQuizData = {
             "Only in art classes"
           ],
           correctAnswer: 0
+        },
+        {
+          id: "l3q16",
+          question: "What happened to Jeanne and Kiyo at a Long Beach bus stop?",
+          options: [
+            "A woman spat on them and called them 'dirty Japs'",
+            "They were refused service",
+            "They were asked to leave",
+            "They were given free bus passes"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q17",
+          question: "What did Jeanne's family find during their 1972 visit to the Manzanar site?",
+          options: [
+            "Ruins, a green auditorium, rock gardens, pear trees, and the obelisk",
+            "A fully restored camp",
+            "A museum and visitor center",
+            "Nothing remained of the camp"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q18",
+          question: "What was the purpose of the obelisk, and what was written on it?",
+          options: [
+            "It was a memorial for the dead, inscribed 'A Memorial to the Dead'",
+            "It marked the camp entrance",
+            "It listed all the camp residents",
+            "It commemorated the camp's opening"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q19",
+          question: "What literary device is used in 'We watched until the boats became a row of tiny white gulls on the horizons'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q20",
+          question: "What literary device is used in 'Secondhand dealers had been prowling around for weeks, like wolves'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q21",
+          question: "What does the word 'valediction' mean?",
+          options: [
+            "A farewell statement or oration",
+            "A celebration",
+            "A beginning",
+            "A protest"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q22",
+          question: "What does the word 'taut' mean?",
+          options: [
+            "Pulled tight, not slack",
+            "Loose and flexible",
+            "Broken",
+            "Worn out"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q23",
+          question: "What does the word 'portal' mean?",
+          options: [
+            "A large and often impressive doorway or gate",
+            "A small window",
+            "A secret passage",
+            "A storage room"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q24",
+          question: "What does the word 'tranquility' mean?",
+          options: [
+            "A state of calm and peace",
+            "A state of chaos",
+            "A state of war",
+            "A state of confusion"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q25",
+          question: "What does the word 'volition' mean?",
+          options: [
+            "The power or act of making one's own choices",
+            "A type of vehicle",
+            "A form of protest",
+            "A religious ceremony"
+          ],
+          correctAnswer: 0
         }
       ]
     }
