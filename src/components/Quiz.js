@@ -50,6 +50,10 @@ function Quiz({ lesson, onComplete, onRestart, isComplete, score }) {
     }
   };
 
+  const handleBackToHome = () => {
+    onRestart();
+  };
+
   const calculateScore = () => {
     let correct = 0;
     lesson.questions.forEach((question) => {
@@ -127,12 +131,20 @@ function Quiz({ lesson, onComplete, onRestart, isComplete, score }) {
             </div>
           ))}
         </div>
-        <button
-          onClick={onRestart}
-          className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-        >
-          Try Another Quiz
-        </button>
+        <div className="flex space-x-4">
+          <button
+            onClick={onRestart}
+            className="flex-1 py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+          >
+            Try Another Quiz
+          </button>
+          <button
+            onClick={handleBackToHome}
+            className="flex-1 py-2 px-4 bg-gray-600 text-white rounded-lg hover:bg-gray-700"
+          >
+            Back to Home
+          </button>
+        </div>
       </div>
     );
   }
@@ -168,17 +180,25 @@ function Quiz({ lesson, onComplete, onRestart, isComplete, score }) {
       </div>
 
       <div className="flex justify-between">
-        <button
-          onClick={handlePrevious}
-          disabled={currentQuestionIndex === 0}
-          className={`px-4 py-2 rounded-lg ${
-            currentQuestionIndex === 0
-              ? 'bg-gray-300 cursor-not-allowed'
-              : 'bg-blue-600 hover:bg-blue-700 text-white'
-          }`}
-        >
-          Previous
-        </button>
+        <div className="flex space-x-2">
+          <button
+            onClick={handleBackToHome}
+            className="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700"
+          >
+            Back to Home
+          </button>
+          <button
+            onClick={handlePrevious}
+            disabled={currentQuestionIndex === 0}
+            className={`px-4 py-2 rounded-lg ${
+              currentQuestionIndex === 0
+                ? 'bg-gray-300 cursor-not-allowed'
+                : 'bg-blue-600 hover:bg-blue-700 text-white'
+            }`}
+          >
+            Previous
+          </button>
+        </div>
         {!showFeedback ? (
           <button
             onClick={handleCheckAnswer}
