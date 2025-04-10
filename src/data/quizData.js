@@ -1043,6 +1043,133 @@ export const quizData = {
           correctAnswer: 3
         }
       ]
+    },
+    {
+      id: 'lesson3',
+      title: 'Farewell to Manzanar',
+      subject: 'English',
+      questions: [
+        {
+          id: 'l3q1',
+          question: 'What was the title of the second yearbook produced by the high school?',
+          type: 'multiple_choice',
+          options: [
+            'Valediction 1945',
+            'Manzanar Memories',
+            'The Camp Chronicle',
+            'High School Yearbook 1945'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l3q2',
+          question: 'What was the procedure for leaving the camp?',
+          type: 'multiple_choice',
+          options: [
+            'People could leave voluntarily or be scheduled in weekly quotas, with the government paying their way',
+            'Everyone had to leave at the same time',
+            'Only those with jobs could leave',
+            'People had to pay their own way out'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l3q3',
+          question: 'What were Papa\'s reasons for waiting to leave?',
+          type: 'multiple_choice',
+          options: [
+            'He wanted to stay with his friends',
+            'He had no job or boats left and decided it was better to stay where they had food',
+            'He was afraid of leaving',
+            'He was waiting for government permission'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q4',
+          question: 'What 1943 California law affected the Issei?',
+          type: 'multiple_choice',
+          options: [
+            'It prevented them from owning property',
+            'It prevented them from obtaining fishing licenses',
+            'It required them to register with the government',
+            'It limited their travel'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q5',
+          question: 'What was the biggest problem with Papa\'s cooperative housing dream?',
+          type: 'multiple_choice',
+          options: [
+            'No one wanted to live in cooperative housing',
+            'Obtaining land and a government loan was unlikely',
+            'The family didn\'t want to move',
+            'The government wouldn\'t allow it'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q6',
+          question: 'Were the Wakatsukis the only family waiting to leave?',
+          type: 'multiple_choice',
+          options: [
+            'Yes, they were the last family',
+            'No. The crowded doctor\'s office showed others were also waiting',
+            'Only a few other families were waiting',
+            'Everyone had already left'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q7',
+          question: 'What happened on August 6, 1945, and how did the camp react?',
+          type: 'multiple_choice',
+          options: [
+            'The war ended and everyone celebrated',
+            'The atomic bomb was dropped. The camp was shocked and subdued',
+            'A new camp was opened',
+            'The first families were allowed to leave'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q8',
+          question: 'What are some details about the family\'s whereabouts?',
+          type: 'multiple_choice',
+          options: [
+            'Everyone was in the same place',
+            'Woody was in Utah, Eleanor in Reno, Bill and others in New Jersey, Ray in the Coast Guard',
+            'They were all in different camps',
+            'They were all in California'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q9',
+          question: 'Which relative does Woody meet in Japan?',
+          type: 'multiple_choice',
+          options: [
+            'His mother\'s sister',
+            'Papa\'s aunt, Toyo',
+            'His father\'s brother',
+            'His grandfather'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l3q10',
+          question: 'Why was there a tombstone with Papa\'s name on it?',
+          type: 'multiple_choice',
+          options: [
+            'It was a mistake',
+            'They hadn\'t heard from him in 9 years and thought he was dead',
+            'It was a memorial for his past life',
+            'It was a tradition in their family'
+          ],
+          correctAnswer: 1
+        }
+      ]
     }
   ]
 }; 
