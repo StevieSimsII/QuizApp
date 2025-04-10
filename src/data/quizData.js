@@ -469,6 +469,204 @@ export const quizData = {
       ]
     },
     {
+      id: 'lesson2',
+      title: 'World War II',
+      questions: [
+        {
+          id: 'l2q1',
+          question: 'Which part of the world was most directly affected by German aggression during the late 1930s?',
+          type: 'multiple_choice',
+          options: [
+            'Central Europe',
+            'North America',
+            'South America',
+            'Asia'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l2q2',
+          question: 'What was Roosevelt\'s message to Congress after the bombing of Pearl Harbor?',
+          type: 'multiple_choice',
+          options: [
+            'He asked Congress to declare war on Japan',
+            'He asked for more funding for the military',
+            'He requested peace negotiations',
+            'He declared neutrality'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l2q3',
+          question: 'In what way did the efforts of the Tuskegee Airmen contribute to the hopes for improved civil rights in the United States?',
+          type: 'multiple_choice',
+          options: [
+            'They proved that African Americans could be successful pilots',
+            'They increased their determination to win civil rights after the war',
+            'They ended segregation in the military',
+            'They convinced the government to pass civil rights laws'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l2q4',
+          question: 'In the 1930s, how did the German people view the military strength of Germany?',
+          type: 'multiple_choice',
+          options: [
+            'They were afraid of their military',
+            'They were excited about their military',
+            'They were indifferent to their military',
+            'They were opposed to their military'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l2q5',
+          question: 'Why is the Battle of Midway considered a turning point in World War II?',
+          type: 'multiple_choice',
+          options: [
+            'Because it was a big win and they could control the Pacific',
+            'Because it ended the war',
+            'Because it was the first battle of the war',
+            'Because it was fought in Europe'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l2q6',
+          question: 'What event most closely followed this call for Japanese surrender?',
+          type: 'multiple_choice',
+          options: [
+            'The atomic bomb',
+            'The Battle of Midway',
+            'The invasion of Normandy',
+            'The Battle of Britain'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l2q7',
+          question: 'How did Stalin maintain control of the Soviet Union?',
+          type: 'multiple_choice',
+          options: [
+            'Through democratic elections',
+            'By sharing power with other leaders',
+            'Stalin ruled as a totalitarian dictator; he killed or imprisoned people who did not agree with him',
+            'Through peaceful negotiations'
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: 'l2q8',
+          question: 'What was a major reason that Germans supported Adolf Hitler during his rise to power in the 1930s?',
+          type: 'multiple_choice',
+          options: [
+            'He promised economic reforms',
+            'He assured Germans they had not lost the war. Rather, he said, Jews and other traitors had "stabbed Germany in the back."',
+            'He promised to end all wars',
+            'He supported democracy'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l2q9',
+          question: 'Why did President Franklin Roosevelt begin the Good Neighbor Policy?',
+          type: 'multiple_choice',
+          options: [
+            'To strengthen relations with Latin Americans',
+            'To prepare for war with Europe',
+            'To establish trade with Asia',
+            'To improve relations with Canada'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l2q10',
+          question: 'What was the main purpose of victory gardens?',
+          type: 'multiple_choice',
+          options: [
+            'To provide food for soldiers',
+            'To reduce food shortages at home',
+            'To beautify neighborhoods',
+            'To train farmers'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l2q11',
+          question: 'Which conclusion can be drawn from Neville Chamberlain\'s statement in 1938 about "peace for our time"?',
+          type: 'multiple_choice',
+          options: [
+            'Hitler would stop expanding',
+            'War was inevitable',
+            'Germany would surrender',
+            'Britain would attack Germany'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l2q12',
+          question: 'What is the correct order of events leading up to the Battle of Britain?',
+          type: 'multiple_choice',
+          options: [
+            'Germany invaded Poland → Britain and France declared war → Germany and Italy attacked France → France surrendered → Hitler invaded neighboring nations',
+            'France surrendered → Germany invaded Poland → Britain and France declared war → Germany and Italy attacked France → Hitler invaded neighboring nations',
+            'Britain and France declared war → Germany invaded Poland → France surrendered → Germany and Italy attacked France → Hitler invaded neighboring nations',
+            'Hitler invaded neighboring nations → Germany invaded Poland → Britain and France declared war → Germany and Italy attacked France → France surrendered'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l2q13',
+          question: 'Which group suffered the most from the "horrors" from Germany?',
+          type: 'multiple_choice',
+          options: [
+            'Jews',
+            'Poles',
+            'Russians',
+            'French'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l2q14',
+          question: 'What was the main cause of unemployment in America from 1940–1945?',
+          type: 'multiple_choice',
+          options: [
+            'Economic depression',
+            'Americans had to go to war',
+            'Factory closures',
+            'Trade restrictions'
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: 'l2q15',
+          question: 'Prior to World War II, what did the leaders of the United Kingdom, France, Italy, and Germany agree to give Germany at Munich?',
+          type: 'multiple_choice',
+          options: [
+            'Sunderland, appeasement',
+            'Poland, alliance',
+            'Austria, territory',
+            'Czechoslovakia, independence'
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: 'l2q16',
+          question: 'What is the correct order of events that led to U.S. entry into World War II?',
+          type: 'multiple_choice',
+          options: [
+            'Japan attacked China → U.S. placed limits on trade → Talks began → Japan attacked U.S.',
+            'U.S. placed limits on trade → Japan attacked China → Talks began → Japan attacked U.S.',
+            'Talks began → Japan attacked China → U.S. placed limits on trade → Japan attacked U.S.',
+            'Japan attacked U.S. → U.S. placed limits on trade → Talks began → Japan attacked China'
+          ],
+          correctAnswer: 0
+        }
+      ]
+    },
+    {
       id: 'webquest',
       title: 'Webquest Information',
       questions: [
