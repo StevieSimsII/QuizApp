@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { quizData } from './data/quizData';
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import quizData from './data/subjects';
 import QuizSelector from './components/QuizSelector';
 import Quiz from './components/Quiz';
-import './styles/App.css';
 
 function App() {
   const [selectedLesson, setSelectedLesson] = useState(null);
