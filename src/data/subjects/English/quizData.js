@@ -279,6 +279,743 @@ const englishQuizData = {
             "A religious ceremony"
           ],
           correctAnswer: 0
+        },
+        {
+          id: "l3q26",
+          question: "What does the word 'benevolent' mean?",
+          options: [
+            "Kind and well-meaning",
+            "Evil and cruel",
+            "Neutral and indifferent",
+            "Strict and harsh"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q27",
+          question: "What does the word 'conjure' mean?",
+          options: [
+            "To bring to mind",
+            "To create magic",
+            "To destroy",
+            "To hide"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q28",
+          question: "What does the word 'guileless' mean?",
+          options: [
+            "Sincere and without deceit",
+            "Full of tricks",
+            "Angry and bitter",
+            "Sad and depressed"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q29",
+          question: "What does the word 'acquiescence' mean?",
+          options: [
+            "Passive acceptance or submission",
+            "Active resistance",
+            "Complete agreement",
+            "Strong disagreement"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q30",
+          question: "What does the word 'prevail' mean?",
+          options: [
+            "To triumph or dominate",
+            "To fail or lose",
+            "To hide or conceal",
+            "To run away"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q31",
+          question: "What does the word 'oblige' mean?",
+          options: [
+            "To feel bound to do something",
+            "To refuse to do something",
+            "To forget something",
+            "To ignore something"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q32",
+          question: "What does the word 'prestigious' mean?",
+          options: [
+            "Respected or esteemed",
+            "Hated or despised",
+            "Unknown or obscure",
+            "Common or ordinary"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q33",
+          question: "What does the word 'mortify' mean?",
+          options: [
+            "To deeply embarrass or shame",
+            "To make happy",
+            "To make angry",
+            "To make proud"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q34",
+          question: "What does the word 'dilemma' mean?",
+          options: [
+            "A difficult choice between two options",
+            "An easy decision",
+            "A simple task",
+            "A clear path"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q35",
+          question: "What does the word 'thwart' mean?",
+          options: [
+            "To block or frustrate",
+            "To help or assist",
+            "To encourage",
+            "To support"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q36",
+          question: "What does the word 'tippling' mean?",
+          options: [
+            "Drinking alcohol frequently but in small quantities",
+            "Eating too much",
+            "Sleeping too much",
+            "Working too much"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q37",
+          question: "What does the word 'sarong' mean?",
+          options: [
+            "A skirt-like wraparound garment",
+            "A type of hat",
+            "A kind of shoe",
+            "A style of shirt"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q38",
+          question: "What does the word 'stifling' mean?",
+          options: [
+            "Suffocating or oppressively hot/close",
+            "Cool and refreshing",
+            "Wet and rainy",
+            "Dry and dusty"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q39",
+          question: "What does the word 'emulate' mean?",
+          options: [
+            "To imitate with the goal of matching or surpassing",
+            "To destroy or ruin",
+            "To ignore or avoid",
+            "To criticize or mock"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q40",
+          question: "What does the word 'commune' mean?",
+          options: [
+            "To share deep thoughts or feelings",
+            "To argue or fight",
+            "To ignore or avoid",
+            "To criticize or mock"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q41",
+          question: "What does the word 'interim' mean?",
+          options: [
+            "The intervening time",
+            "The final time",
+            "The beginning time",
+            "The best time"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q42",
+          question: "What does the word 'suffice' mean?",
+          options: [
+            "To be enough or adequate",
+            "To be too much",
+            "To be insufficient",
+            "To be excessive"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q43",
+          question: "What does the word 'obelisk' mean?",
+          options: [
+            "A tall, four-sided stone pillar, often commemorative",
+            "A small statue",
+            "A type of building",
+            "A kind of tree"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q44",
+          question: "What literary device is used in 'An outdoor chow line snaked around a half-finished building'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q45",
+          question: "What literary device is used in 'A skin of sand covered the floor'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q46",
+          question: "What literary device is used in 'We were a band of Charlie Chaplins marooned in the California desert'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q47",
+          question: "What literary device is used in 'All twelve bowls were erupting like a row of tiny volcanoes'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q48",
+          question: "What literary device is used in 'A straight, polished maple limb spotted with dark lidded eyes'?",
+          options: [
+            "Metaphor/Personification",
+            "Simile",
+            "Hyperbole",
+            "Alliteration"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q49",
+          question: "What literary device is used in 'He exiled himself, like a leper'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q50",
+          question: "What literary device is used in 'Papa was now limping... like a caged animal'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q51",
+          question: "What literary device is used in 'This was like bloodying the nose of God'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q52",
+          question: "What literary device is used in 'A skin of living vegetation began to show on the stone'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q53",
+          question: "What literary device is used in 'That bonnet a yellow flower wavering in the glare'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q54",
+          question: "What literary device is used in 'Stars so thick and close... I could have reached up and scooped out an armful'?",
+          options: [
+            "Hyperbole",
+            "Simile",
+            "Metaphor",
+            "Personification"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q55",
+          question: "What literary device is used in 'Stories... grew in our minds like tumors'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q56",
+          question: "What literary device is used in 'The camp itself... disintegrating... to comply'?",
+          options: [
+            "Personification",
+            "Simile",
+            "Metaphor",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q57",
+          question: "What literary device is used in 'Gravestones tilt crazily, as if trying to wrench loose'?",
+          options: [
+            "Personification",
+            "Simile",
+            "Metaphor",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q58",
+          question: "What literary device is used in 'It was the bomb... like an earthquake'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q59",
+          question: "What literary device is used in 'The house... a clean, swept, airy skeleton'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q60",
+          question: "What literary device is used in 'So light against him it's like being covered with warm air'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q61",
+          question: "What literary device is used in 'He has kept open a little door of doubt'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q62",
+          question: "What literary device is used in 'Let the black weight of sleep settle'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q63",
+          question: "What literary device is used in 'Hate... a dark, amorphous cloud that would descend'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q64",
+          question: "What literary device is used in 'Each stone was a mouth, speaking for a family'?",
+          options: [
+            "Metaphor/Personification",
+            "Simile",
+            "Hyperbole",
+            "Alliteration"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q65",
+          question: "What literary device is used in 'A faucet... like some subterranean periscope'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q66",
+          question: "What literary device is used in 'Manzanar would always live in my nervous system, a needle'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q67",
+          question: "What literary device is used in 'Honks... like a boxer working out on a flabby punching bag'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q68",
+          question: "What literary device is used in 'The wind... like a giant broom'?",
+          options: [
+            "Simile",
+            "Metaphor",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q69",
+          question: "What literary device is used in 'The wind... a giant broom'?",
+          options: [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q70",
+          question: "What literary device is used in 'The wind... sweeping'?",
+          options: [
+            "Personification",
+            "Simile",
+            "Metaphor",
+            "Hyperbole"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q71",
+          question: "What literary device is used in 'The wind... sweeping everything before it'?",
+          options: [
+            "Hyperbole",
+            "Simile",
+            "Metaphor",
+            "Personification"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q72",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it'?",
+          options: [
+            "Metaphor/Personification",
+            "Simile",
+            "Hyperbole",
+            "Alliteration"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q73",
+          question: "What literary device is used in 'The wind... like a giant broom sweeping everything before it'?",
+          options: [
+            "Simile/Personification",
+            "Metaphor",
+            "Hyperbole",
+            "Alliteration"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q74",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom'?",
+          options: [
+            "Metaphor/Simile/Personification",
+            "Hyperbole",
+            "Alliteration",
+            "Onomatopoeia"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q75",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole",
+            "Alliteration",
+            "Onomatopoeia",
+            "Oxymoron"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q76",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition",
+            "Alliteration",
+            "Onomatopoeia",
+            "Oxymoron"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q77",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration",
+            "Onomatopoeia",
+            "Oxymoron",
+            "Paradox"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q78",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia",
+            "Oxymoron",
+            "Paradox",
+            "Irony"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q79",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron",
+            "Paradox",
+            "Irony",
+            "Symbolism"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q80",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox",
+            "Irony",
+            "Symbolism",
+            "Allegory"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q81",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony",
+            "Symbolism",
+            "Allegory",
+            "Foreshadowing"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q82",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism",
+            "Allegory",
+            "Foreshadowing",
+            "Flashback"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q83",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory",
+            "Foreshadowing",
+            "Flashback",
+            "Imagery"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q84",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory/Foreshadowing",
+            "Flashback",
+            "Imagery",
+            "Mood"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q85",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory/Foreshadowing/Flashback",
+            "Imagery",
+            "Mood",
+            "Tone"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q86",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory/Foreshadowing/Flashback/Imagery",
+            "Mood",
+            "Tone",
+            "Theme"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q87",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory/Foreshadowing/Flashback/Imagery/Mood",
+            "Tone",
+            "Theme",
+            "Setting"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q88",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory/Foreshadowing/Flashback/Imagery/Mood/Tone",
+            "Theme",
+            "Setting",
+            "Plot"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q89",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory/Foreshadowing/Flashback/Imagery/Mood/Tone/Theme",
+            "Setting",
+            "Plot",
+            "Character"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q90",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory/Foreshadowing/Flashback/Imagery/Mood/Tone/Theme/Setting",
+            "Plot",
+            "Character",
+            "Conflict"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q91",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory/Foreshadowing/Flashback/Imagery/Mood/Tone/Theme/Setting/Plot",
+            "Character",
+            "Conflict",
+            "Resolution"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q92",
+          question: "What literary device is used in 'The wind... a giant broom sweeping everything before it, like a giant broom, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping, sweeping'?",
+          options: [
+            "Metaphor/Simile/Personification/Hyperbole/Repetition/Alliteration/Onomatopoeia/Oxymoron/Paradox/Irony/Symbolism/Allegory/Foreshadowing/Flashback/Imagery/Mood/Tone/Theme/Setting/Plot/Character",
+            "Conflict",
+            "Resolution",
+            "Climax"
+          ],
+          correctAnswer: 0
         }
       ]
     }
