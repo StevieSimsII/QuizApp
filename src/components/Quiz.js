@@ -112,8 +112,8 @@ function Quiz({ lesson, onComplete, onRestart, isComplete, score }) {
                   <span className="font-medium">Correct answer: </span>
                   {question.options[question.correctAnswer]}
                 </p>
-                {answers[question.id] !== undefined && answers[question.id] !== question.correctAnswer && (
-                  <p className="text-red-600 mt-1">
+                {answers[question.id] !== undefined && (
+                  <p className={`mt-1 ${answers[question.id] === question.correctAnswer ? 'text-green-600' : 'text-red-600'}`}>
                     <span className="font-medium">Your answer: </span>
                     {question.options[answers[question.id]]}
                   </p>
