@@ -597,12 +597,12 @@ export const quizData = {
           question: 'Which conclusion can be drawn from Neville Chamberlain\'s statement in 1938 about "peace for our time"?',
           type: 'multiple_choice',
           options: [
+            'Germany would surrender',
             'Hitler would stop expanding',
             'War was inevitable',
-            'Germany would surrender',
             'Britain would attack Germany'
           ],
-          correctAnswer: 0
+          correctAnswer: 1
         },
         {
           id: 'l2q12',
