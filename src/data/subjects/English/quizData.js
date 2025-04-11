@@ -743,7 +743,7 @@ const englishQuizData = {
           "correctAnswer": 0
         }
           
-    }
+    
   ]
 };
 
