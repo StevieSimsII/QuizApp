@@ -108,23 +108,14 @@ function Quiz({ lesson, onComplete, onRestart, isComplete, score }) {
             >
               <p className="font-medium">{index + 1}. {question.question}</p>
               <div className="mt-2">
-                {question.type === 'multiple_choice' ? (
-                  <p>
-                    <span className="font-medium">Correct answer: </span>
-                    {question.options[question.correctAnswer]}
-                  </p>
-                ) : (
-                  <p>
-                    <span className="font-medium">Correct answer: </span>
-                    {question.correctAnswer ? 'True' : 'False'}
-                  </p>
-                )}
+                <p>
+                  <span className="font-medium">Correct answer: </span>
+                  {question.options[question.correctAnswer]}
+                </p>
                 {answers[question.id] !== undefined && answers[question.id] !== question.correctAnswer && (
                   <p className="text-red-600 mt-1">
                     <span className="font-medium">Your answer: </span>
-                    {question.type === 'multiple_choice' 
-                      ? question.options[answers[question.id]]
-                      : answers[question.id] ? 'True' : 'False'}
+                    {question.options[answers[question.id]]}
                   </p>
                 )}
               </div>
