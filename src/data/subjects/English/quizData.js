@@ -731,7 +731,7 @@ const englishQuizData = {
           ],
           "correctAnswer": 0
         },
-        {
+                {
           "id": "l3q67",
           "question": "What literary device is used in 'Honks... like a boxer working out on a flabby punching bag'?",
           "options": [
@@ -742,8 +742,8 @@ const englishQuizData = {
           ],
           "correctAnswer": 0
         }
-          
-    
+      ]
+    }
   ]
 };
 
