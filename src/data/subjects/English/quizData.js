@@ -680,12 +680,12 @@ const englishQuizData = {
           "id": "l3q62",
           "question": "What literary device is used in 'Let the black weight of sleep settle'?",
           "options": [
-            "Metaphor",
-            "Simile",
             "Hyperbole",
+            "Simile",
+            "Metaphor",
             "Personification"
           ],
-          "correctAnswer": 0
+          "correctAnswer": 3
         },
         {
           "id": "l3q63",
@@ -696,7 +696,7 @@ const englishQuizData = {
             "Simile",
             "Personification"
           ],
-          "correctAnswer": 2
+          "correctAnswer": 0
         },
         {
           "id": "l3q64",
