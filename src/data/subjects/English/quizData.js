@@ -309,7 +309,7 @@ const englishQuizData = {
             "Sad and depressed",
             "Angry and bitter",
             "Full of tricks",
-            "Sincere and without deceit"
+            "Sincere and straightforward"
           ],
           "correctAnswer": 3
         },
