@@ -124,7 +124,7 @@ const socialStudiesQuizData = {
             "Germany would become democratic",
             "Hitler would stop expanding"
           ],
-          correctAnswer: 1
+          correctAnswer: 3
         },
         {
           id: "l1q12",
