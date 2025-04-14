@@ -251,89 +251,89 @@ const englishQuizData = {
           id: "l3q23",
           question: "What does the word 'portal' mean?",
           options: [
-            "A large and often impressive doorway or gate",
             "A small window",
+            "A large and often impressive doorway or gate",
             "A secret passage",
             "A storage room"
           ],
-          correctAnswer: 0
+          correctAnswer: 1
         },
         {
           id: "l3q24",
           question: "What does the word 'tranquility' mean?",
           options: [
-            "A state of calm and peace",
             "A state of chaos",
             "A state of war",
+            "A state of calm and peace",
             "A state of confusion"
           ],
-          correctAnswer: 0
+          correctAnswer: 2
         },
         {
           id: "l3q25",
           question: "What does the word 'volition' mean?",
           options: [
-            "The power or act of making one's own choices",
             "A type of vehicle",
             "A form of protest",
+            "The power or act of making one's own choices",
             "A religious ceremony"
           ],
-          correctAnswer: 0
+          correctAnswer: 2
         },
         {
           id: "l3q26",
           question: "What does the word 'benevolent' mean?",
           options: [
-            "Kind and well-meaning",
             "Evil and cruel",
+            "Kind and well-meaning",
             "Neutral and indifferent",
             "Strict and harsh"
           ],
-          correctAnswer: 0
+          correctAnswer: 1
         },
         {
           id: "l3q27",
           question: "What does the word 'conjure' mean?",
           options: [
-            "To bring to mind",
             "To create magic",
+            "To bring to mind",
             "To destroy",
             "To hide"
           ],
-          correctAnswer: 0
+          correctAnswer: 1
         },
         {
           id: "l3q28",
           question: "What does the word 'guileless' mean?",
           options: [
-            "Sincere and without deceit",
             "Full of tricks",
+            "Sincere and without deceit",
             "Angry and bitter",
             "Sad and depressed"
           ],
-          correctAnswer: 0
+          correctAnswer: 1
         },
         {
           id: "l3q29",
           question: "What does the word 'acquiescence' mean?",
           options: [
-            "Passive acceptance or submission",
             "Active resistance",
             "Complete agreement",
+            "Passive acceptance or submission",
             "Strong disagreement"
           ],
-          correctAnswer: 0
+          correctAnswer: 2
         },
         {
           id: "l3q30",
           question: "What does the word 'prevail' mean?",
           options: [
-            "To triumph or dominate",
             "To fail or lose",
             "To hide or conceal",
+            "To triumph or dominate",
             "To run away"
           ],
-          correctAnswer: 0
+          correctAnswer: 2
         },
         {
           id: "l3q31",
