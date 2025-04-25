@@ -8,11 +8,16 @@ function App() {
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [quizComplete, setQuizComplete] = useState(false);
   const [score, setScore] = useState(null);
+  const [selectedSubject, setSelectedSubject] = useState(null);
 
   const handleLessonSelect = (lesson) => {
     setSelectedLesson(lesson);
     setQuizComplete(false);
     setScore(null);
+  };
+
+  const handleSubjectSelect = (subject) => {
+    setSelectedSubject(subject);
   };
 
   const handleQuizComplete = (finalScore) => {
@@ -22,9 +27,27 @@ function App() {
 
   const handleRestart = () => {
     setSelectedLesson(null);
+    setSelectedSubject(null);
     setQuizComplete(false);
     setScore(null);
   };
+
+  const renderSubjectSelector = () => (
+    <div className="space-y-4">
+      <h2 className="text-xl font-semibold text-center mb-6">Select a Subject</h2>
+      <div className="grid gap-4">
+        {Object.keys(quizData.subjects).map((subject) => (
+          <button
+            key={subject}
+            onClick={() => handleSubjectSelect(subject)}
+            className="w-full px-4 py-3 text-left bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors duration-200"
+          >
+            <h3 className="text-lg font-medium text-blue-900">{subject}</h3>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
@@ -36,9 +59,11 @@ function App() {
                 <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
                   QuizApp
                 </h1>
-                {!selectedLesson ? (
+                {!selectedSubject ? (
+                  renderSubjectSelector()
+                ) : !selectedLesson ? (
                   <QuizSelector
-                    lessons={quizData.lessons}
+                    lessons={quizData.subjects[selectedSubject].lessons}
                     onLessonSelect={handleLessonSelect}
                   />
                 ) : (
