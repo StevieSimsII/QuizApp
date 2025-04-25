@@ -958,6 +958,240 @@ const scienceQuizData = {
           correctAnswer: 1
         }
       ]
+    },
+    {
+      id: "l6",
+      title: "Energy Flow in Ecosystems",
+      subject: "Science",
+      questions: [
+        {
+          id: "l6q1",
+          question: "What is the primary source of energy for most ecosystems?",
+          options: [
+            "The sun",
+            "Geothermal heat",
+            "Chemical reactions",
+            "Wind power"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l6q2",
+          question: "What is a producer in an ecosystem?",
+          options: [
+            "An organism that makes its own food",
+            "An organism that eats other organisms",
+            "An organism that breaks down dead matter",
+            "An organism that moves energy through the ecosystem"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l6q3",
+          question: "What is a consumer in an ecosystem?",
+          options: [
+            "An organism that makes its own food",
+            "An organism that eats other organisms",
+            "An organism that breaks down dead matter",
+            "An organism that moves energy through the ecosystem"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l6q4",
+          question: "What is a decomposer in an ecosystem?",
+          options: [
+            "An organism that makes its own food",
+            "An organism that eats other organisms",
+            "An organism that breaks down dead matter",
+            "An organism that moves energy through the ecosystem"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: "l6q5",
+          question: "What is a food chain?",
+          options: [
+            "A series of events in which one organism eats another",
+            "A series of events in which energy is transferred",
+            "A series of events in which matter is recycled",
+            "A series of events in which organisms compete"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l6q6",
+          question: "What is a food web?",
+          options: [
+            "A single path of energy transfer",
+            "A network of overlapping food chains",
+            "A diagram showing energy flow",
+            "A list of organisms in an ecosystem"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l6q7",
+          question: "What is an energy pyramid?",
+          options: [
+            "A diagram showing the amount of energy at each level of a food chain",
+            "A diagram showing the number of organisms at each level",
+            "A diagram showing the size of organisms at each level",
+            "A diagram showing the types of organisms at each level"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l6q8",
+          question: "How much energy is typically transferred from one level to the next in an energy pyramid?",
+          options: [
+            "10%",
+            "50%",
+            "90%",
+            "100%"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l6q9",
+          question: "What happens to the rest of the energy that is not transferred to the next level?",
+          options: [
+            "It is stored for later use",
+            "It is lost as heat",
+            "It is recycled back to producers",
+            "It is converted to matter"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l6q10",
+          question: "What is the role of decomposers in an ecosystem?",
+          options: [
+            "To produce energy for other organisms",
+            "To break down dead organisms and return nutrients to the soil",
+            "To control the population of other organisms",
+            "To provide food for consumers"
+          ],
+          correctAnswer: 1
+        }
+      ]
+    },
+    {
+      id: "l7",
+      title: "Matter and Energy in Ecosystems",
+      subject: "Science",
+      questions: [
+        {
+          id: "l7q1",
+          question: "What is the difference between matter and energy in an ecosystem?",
+          options: [
+            "Matter is recycled, while energy flows through",
+            "Energy is recycled, while matter flows through",
+            "Both matter and energy are recycled",
+            "Both matter and energy flow through"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l7q2",
+          question: "What is the water cycle?",
+          options: [
+            "The continuous movement of water through the environment",
+            "The process of water evaporating from plants",
+            "The movement of water through living organisms",
+            "The process of water freezing and melting"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l7q3",
+          question: "What is the carbon cycle?",
+          options: [
+            "The movement of carbon through the environment",
+            "The process of carbon dioxide being absorbed by plants",
+            "The release of carbon by animals",
+            "The storage of carbon in fossil fuels"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l7q4",
+          question: "What is the nitrogen cycle?",
+          options: [
+            "The movement of nitrogen through the environment",
+            "The process of nitrogen being fixed by bacteria",
+            "The release of nitrogen by decomposers",
+            "The absorption of nitrogen by plants"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l7q5",
+          question: "What is the role of bacteria in the nitrogen cycle?",
+          options: [
+            "To convert nitrogen gas into a form plants can use",
+            "To release nitrogen into the atmosphere",
+            "To absorb nitrogen from the soil",
+            "To break down nitrogen compounds"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l7q6",
+          question: "What is the role of plants in the carbon cycle?",
+          options: [
+            "To absorb carbon dioxide and release oxygen",
+            "To release carbon dioxide and absorb oxygen",
+            "To store carbon in their tissues",
+            "To break down carbon compounds"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l7q7",
+          question: "What is the role of animals in the carbon cycle?",
+          options: [
+            "To absorb carbon dioxide and release oxygen",
+            "To release carbon dioxide and absorb oxygen",
+            "To store carbon in their tissues",
+            "To break down carbon compounds"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l7q8",
+          question: "What is the role of decomposers in the carbon cycle?",
+          options: [
+            "To absorb carbon dioxide",
+            "To release carbon dioxide",
+            "To store carbon",
+            "To break down dead organisms and release carbon"
+          ],
+          correctAnswer: 3
+        },
+        {
+          id: "l7q9",
+          question: "What is the role of fossil fuels in the carbon cycle?",
+          options: [
+            "To absorb carbon dioxide",
+            "To release carbon dioxide when burned",
+            "To store carbon for millions of years",
+            "To break down carbon compounds"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: "l7q10",
+          question: "What is the role of the atmosphere in the water cycle?",
+          options: [
+            "To store water vapor",
+            "To transport water through the environment",
+            "To condense water into clouds",
+            "All of the above"
+          ],
+          correctAnswer: 3
+        }
+      ]
     }
   ]
 };
