@@ -1,9 +1,18 @@
 import React from 'react';
 
-function QuizSelector({ lessons, onLessonSelect }) {
+function QuizSelector({ lessons, onLessonSelect, onBackToSubjects }) {
   return (
     <div className="space-y-4">
-      <h2 className="text-xl font-semibold text-center mb-6">Select a Quiz</h2>
+      <div className="flex justify-between items-center mb-6">
+        <button
+          onClick={onBackToSubjects}
+          className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-200"
+        >
+          Back to Subjects
+        </button>
+        <h2 className="text-xl font-semibold text-center">Select a Quiz</h2>
+        <div className="w-24"></div> {/* Spacer for alignment */}
+      </div>
       <div className="grid gap-4">
         {lessons.map((lesson) => (
           <button

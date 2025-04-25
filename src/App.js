@@ -20,6 +20,10 @@ function App() {
     setSelectedSubject(subject);
   };
 
+  const handleBackToSubjects = () => {
+    setSelectedSubject(null);
+  };
+
   const handleQuizComplete = (finalScore) => {
     setQuizComplete(true);
     setScore(finalScore);
@@ -65,6 +69,7 @@ function App() {
                   <QuizSelector
                     lessons={quizData.subjects[selectedSubject].lessons}
                     onLessonSelect={handleLessonSelect}
+                    onBackToSubjects={handleBackToSubjects}
                   />
                 ) : (
                   <Quiz
