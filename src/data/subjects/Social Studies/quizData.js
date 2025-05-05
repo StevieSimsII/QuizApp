@@ -3,7 +3,7 @@ const socialStudiesQuizData = {
   lessons: [
     {
       id: "l1",
-      title: "World War II (Chapter 14)",
+      title: "Chapter 14 - World War II",
       subject: "Social Studies",
       questions: [
         {
