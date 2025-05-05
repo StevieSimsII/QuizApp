@@ -15,7 +15,7 @@ An interactive quiz platform for multiple subjects including Social Studies, Sci
 ## Subjects Covered
 
 ### Social Studies
-- World War II
+- World War II (Chapter 14)
 - Imperialism and World War I (Chapter 12)
 - The Roaring Twenties and Great Depression (Chapter 13)
 
