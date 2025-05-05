@@ -1,8 +1,9 @@
+// Social Studies Quiz Data
 const socialStudiesQuizData = {
   lessons: [
     {
       id: "l1",
-      title: "World War II",
+      title: "World War II (Chapter 14)",
       subject: "Social Studies",
       questions: [
         {
