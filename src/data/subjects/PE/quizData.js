@@ -33,7 +33,7 @@ const peQuizData = {
           options: [
             "Both teams bat at the same time",
             "One team bats during the top while the other fields, then they switch for the bottom",
-            "One team fields during the top while the other bats, then they switch for the bottom",
+            "The home team always bats first",
             "Both teams field at the same time"
           ],
           correctAnswer: 1
