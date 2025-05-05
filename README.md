@@ -1,14 +1,34 @@
-# Science Quiz Application
+# Educational Quiz Application
 
-An interactive quiz platform for testing knowledge about human body systems and organization.
+An interactive quiz platform for multiple subjects including Social Studies, Science, English, and Physical Education.
 
 ## Features
 
+- Multi-subject quiz platform
 - Dynamic quiz generation from question sets
-- Multiple choice and true/false questions
+- Multiple choice questions with detailed explanations
 - One question at a time display with navigation
 - Score tracking and answer review
 - Responsive design for all devices
+- Organized study guides for each subject
+
+## Subjects Covered
+
+### Social Studies
+- World War II
+- Imperialism and World War I (Chapter 12)
+- The Roaring Twenties and Great Depression (Chapter 13)
+
+### Science
+- Human Body Systems and Organization
+- Ecosystems and Interactions
+- Environmental Systems
+
+### English
+- Farewell to Manzanar Study Guide
+
+### Physical Education
+- Baseball Rules and Techniques
 
 ## Tech Stack
 
@@ -27,8 +47,8 @@ An interactive quiz platform for testing knowledge about human body systems and 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/StevieSimsII/Science_Test.git
-cd Science_Test
+git clone https://github.com/StevieSimsII/QuizApp.git
+cd QuizApp
 ```
 
 2. Install dependencies:
@@ -58,7 +78,17 @@ This will create an optimized production build in the `build` folder.
 ```
 src/
   ├── components/     # React components
-  ├── data/          # Quiz data and questions
+  ├── data/          
+  │   ├── subjects/  # Subject-specific quiz data
+  │   │   ├── Social Studies/
+  │   │   ├── Science/
+  │   │   ├── English/
+  │   │   └── PE/
+  │   └── study-guides/  # Subject-specific study materials
+  │       ├── Social Studies/
+  │       ├── Science/
+  │       ├── English/
+  │       └── PE/
   ├── styles/        # CSS and styling files
   └── App.js         # Main application component
 ```
