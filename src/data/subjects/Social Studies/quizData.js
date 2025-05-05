@@ -182,6 +182,130 @@ const socialStudiesQuizData = {
           correctAnswer: 1
         }
       ]
+    },
+    {
+      id: "l2",
+      title: "Chapter 12 - Imperialism and World War I",
+      subject: "Social Studies",
+      questions: [
+        {
+          id: "l2q1",
+          question: "Why were the islands acquired or annexed by the United States?",
+          options: [
+            "To expand U.S. territory, influence, and economic interests overseas",
+            "To establish military bases only",
+            "To protect native populations",
+            "To create new states"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l2q2",
+          question: "In what way did the rebel forces in Cuba remind some Americans of the Patriots who fought in the American Revolution?",
+          options: [
+            "Both groups used similar military tactics",
+            "Both groups were fighting against a colonial power for independence and freedom",
+            "Both groups had the same leaders",
+            "Both groups received the same foreign support"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q3",
+          question: "What effect did John Hay's 'open door' policy letters have on the imperial powers?",
+          options: [
+            "They started a war between the powers",
+            "They helped maintain equal trading rights in China and reduced the risk of conflict",
+            "They closed all trade with China",
+            "They established new colonies in China"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q4",
+          question: "What had the MOST impact on America's decision to enter World War I?",
+          options: [
+            "The Zimmermann telegram",
+            "Germany's use of unrestricted submarine warfare",
+            "The sinking of the Lusitania",
+            "The Russian Revolution"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q5",
+          question: "About how many miles were saved in shipping goods from San Francisco to Jupiter, Florida, by using the Panama Canal?",
+          options: [
+            "5,000 miles",
+            "8,000 miles",
+            "10,000 miles",
+            "3,000 miles"
+          ],
+          correctAnswer: 1
+        }
+      ]
+    },
+    {
+      id: "l3",
+      title: "Chapter 13 - The Roaring Twenties and Great Depression",
+      subject: "Social Studies",
+      questions: [
+        {
+          id: "l3q1",
+          question: "What did the Immigration Quota Act state for immigrants coming into the United States?",
+          options: [
+            "It allowed unlimited immigration",
+            "It limited the number of immigrants allowed into the U.S. from each country",
+            "It banned all immigration",
+            "It only affected European immigrants"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q2",
+          question: "Which amendment did the Woman's Christian Temperance Union reflect?",
+          options: [
+            "The 19th Amendment",
+            "The 18th Amendment, which established Prohibition",
+            "The 21st Amendment",
+            "The 15th Amendment"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q3",
+          question: "What fashion change in the 1920s raised questions about the 'old-fashioned girl'?",
+          options: [
+            "The rise of the flapper style, characterized by shorter skirts and bobbed hair",
+            "The return to Victorian fashion",
+            "The adoption of military uniforms",
+            "The popularity of formal wear"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "l3q4",
+          question: "How did President Franklin Roosevelt's Truth-in-Securities Act support his New Deal goals?",
+          options: [
+            "It increased taxes",
+            "It aimed to restore investor confidence by requiring truthful disclosure of financial information",
+            "It created new jobs",
+            "It reduced government spending"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q5",
+          question: "What was the major issue of the 1932 election?",
+          options: [
+            "World War I",
+            "The Great Depression and how to respond to it",
+            "Immigration reform",
+            "Women's suffrage"
+          ],
+          correctAnswer: 1
+        }
+      ]
     }
   ]
 };
