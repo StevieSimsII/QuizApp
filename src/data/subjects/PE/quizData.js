@@ -2,7 +2,7 @@ const peQuizData = {
   lessons: [
     {
       id: "l1",
-      title: "Living Things and the Environment",
+      title: "Baseball Exam",
       subject: "PE",
       questions: [
         {
