@@ -1,12 +1,12 @@
 import englishQuizData from './English/quizData';
-import socialStudiesQuizData from './SocialStudies/quizData';
+import socialStudiesQuizData from './Social Studies/quizData';
 import scienceQuizData from './Science/quizData';
 import peQuizData from './PE/quizData';
 
 const allQuizData = {
   subjects: {
     English: englishQuizData,
-    SocialStudies: socialStudiesQuizData,
+    "Social Studies": socialStudiesQuizData,
     Science: scienceQuizData,
     PE: peQuizData
   },
