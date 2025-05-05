@@ -22,7 +22,7 @@ function QuizSelector({ lessons, onLessonSelect, onBackToSubjects }) {
           >
             <h3 className="text-lg font-medium text-blue-900">{lesson.title}</h3>
             <p className="text-sm text-blue-600">
-              {lesson.subject} - {lesson.id} - {lesson.questions.length} questions
+              {lesson.subject} - {lesson.questions.length} questions
             </p>
           </button>
         ))}
