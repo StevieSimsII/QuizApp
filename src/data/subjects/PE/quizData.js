@@ -62,14 +62,14 @@ const peQuizData = {
         },
         {
           id: "q6",
-          question: "What are biotic and abiotic equivalents in baseball field layout?",
+          question: "What is the distance from home plate to the outfield fence in a standard baseball field?",
           options: [
-            "Home plate and bases",
-            "Fair territory (infield and outfield) and foul territory",
-            "Dugouts and bullpens",
-            "Batter's box and catcher's box"
+            "200-250 feet",
+            "250-300 feet",
+            "300-400 feet",
+            "400-450 feet"
           ],
-          correctAnswer: 1
+          correctAnswer: 2
         },
         {
           id: "q7",
