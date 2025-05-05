@@ -243,6 +243,116 @@ const socialStudiesQuizData = {
             "3,000 miles"
           ],
           correctAnswer: 1
+        },
+        {
+          id: "l2q6",
+          question: "What happened when the Bolsheviks seized power in Russia?",
+          options: [
+            "Russia joined the Allied forces",
+            "Russia withdrew from World War I after signing a peace treaty with Germany",
+            "Russia declared war on the United States",
+            "Russia remained neutral in the war"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q7",
+          question: "The main theme of Wilson's Fourteen Points was to?",
+          options: [
+            "Establish American dominance in world affairs",
+            "Promote peace and prevent future wars through justice and cooperation",
+            "Create new colonies for the United States",
+            "Increase military spending"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q8",
+          question: "Which of the following best completes the flowchart illustrating the developments that led to World War I?",
+          options: [
+            "The formation of the League of Nations",
+            "The assassination of Archduke Franz Ferdinand of Austria-Hungary",
+            "The sinking of the Lusitania",
+            "The Russian Revolution"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q9",
+          question: "What effect did the sale of Liberty Bonds have on the American effort in World War I?",
+          options: [
+            "They increased taxes on the wealthy",
+            "They provided funding for the war effort through public investment",
+            "They reduced government spending",
+            "They created new jobs"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q10",
+          question: "Explain how Americans won a quick victory in the Spanish-American War.",
+          options: [
+            "Through superior ground forces",
+            "The U.S. had superior naval power and quickly defeated Spanish forces in the Philippines and Cuba",
+            "Through diplomatic negotiations",
+            "Through economic sanctions"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q11",
+          question: "Which best explains why Hawaii's Queen Liliuokalani issued her statement?",
+          options: [
+            "She was celebrating American annexation",
+            "She was protesting the forced annexation of Hawaii by the United States",
+            "She was declaring war on the United States",
+            "She was seeking economic aid"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q12",
+          question: "Based on this excerpt from a speech by Woodrow Wilson, what were Wilson's hopes for the League of Nations?",
+          options: [
+            "To establish American military dominance",
+            "To ensure justice, liberty, and equal rights for all nations, whether strong or weak",
+            "To create new colonies",
+            "To increase trade barriers"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q13",
+          question: "In what way was the influenza epidemic of 1918–1919 a worse tragedy than World War I?",
+          options: [
+            "It affected more countries",
+            "It killed more people worldwide than the war itself",
+            "It lasted longer",
+            "It caused more economic damage"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q14",
+          question: "In what way did the Zimmermann telegram anger many Americans and move the United States closer to war?",
+          options: [
+            "It revealed German military secrets",
+            "It revealed Germany's attempt to ally with Mexico against the U.S.",
+            "It exposed American spies",
+            "It threatened American trade"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l2q15",
+          question: "What is one reason a substantial number of Americans favored the Central Powers in World War I?",
+          options: [
+            "They were promised economic benefits",
+            "Many Americans had German or Austrian heritage and sympathized with their homelands",
+            "They opposed British colonialism",
+            "They wanted to avoid war"
+          ],
+          correctAnswer: 1
         }
       ]
     },
@@ -303,6 +413,171 @@ const socialStudiesQuizData = {
             "The Great Depression and how to respond to it",
             "Immigration reform",
             "Women's suffrage"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q6",
+          question: "What does a Bull Market refer to?",
+          options: [
+            "A period of falling stock prices",
+            "A period of rising stock prices",
+            "A market for cattle trading",
+            "A market for bullfighting"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q7",
+          question: "Why did writers move to Europe as expatriates after World War I?",
+          options: [
+            "For better job opportunities",
+            "They were disillusioned with American values and sought inspiration and freedom abroad",
+            "To escape the Great Depression",
+            "To learn new languages"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q8",
+          question: "How does installment buying work?",
+          options: [
+            "Buyers pay the full price upfront",
+            "Consumers pay for goods over time in small, regular payments",
+            "Buyers trade in old items for new ones",
+            "Buyers receive discounts for bulk purchases"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q9",
+          question: "What did many farmers, coal miners, and unionized workers have in common in the 1920s?",
+          options: [
+            "They all became wealthy",
+            "They experienced economic hardship despite the general prosperity of the decade",
+            "They all moved to cities",
+            "They all supported Prohibition"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q10",
+          question: "During the Great Depression, what were Mexican Americans forced to do?",
+          options: [
+            "They were given priority for jobs",
+            "Many were deported or pressured to return to Mexico due to job scarcity and discrimination",
+            "They received government assistance",
+            "They were granted citizenship"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q11",
+          question: "The Equal Rights Amendment was proposed in what year?",
+          options: [
+            "1919",
+            "1923",
+            "1928",
+            "1932"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q12",
+          question: "The Sacco and Vanzetti trial was a direct result of what?",
+          options: [
+            "A bank robbery",
+            "Fear of immigrants and radical political beliefs during the Red Scare",
+            "Labor disputes",
+            "Political corruption"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q13",
+          question: "What scandal revealed corruption in government?",
+          options: [
+            "The Watergate Scandal",
+            "The Teapot Dome Scandal",
+            "The Credit Mobilier Scandal",
+            "The Whiskey Ring Scandal"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q14",
+          question: "What was a key factor in the passage of the Emergency Quota Act in 1921?",
+          options: [
+            "Economic growth",
+            "A rise in nativist attitudes",
+            "Labor shortages",
+            "International pressure"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q15",
+          question: "List the famous athletes in the 1920s?",
+          options: [
+            "Muhammad Ali, Joe Louis, and Jesse Owens",
+            "Babe Ruth, Jack Dempsey, and Gertrude Ederle",
+            "Jim Thorpe, Red Grange, and Bill Tilden",
+            "Lou Gehrig, Ty Cobb, and Walter Johnson"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q16",
+          question: "What industry benefited from the discovery of oil?",
+          options: [
+            "The railroad industry",
+            "The automobile industry",
+            "The steel industry",
+            "The textile industry"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q17",
+          question: "The Social Security Act created __________ and __________.",
+          options: [
+            "Health insurance and disability benefits",
+            "Pensions for the elderly and unemployment insurance",
+            "Food stamps and housing assistance",
+            "Education grants and job training"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q18",
+          question: "What actions contradicted and damaged fundamental American beliefs in 1932?",
+          options: [
+            "The New Deal programs",
+            "Government inaction and the violent response to the Bonus Army protests",
+            "The repeal of Prohibition",
+            "The election of Franklin Roosevelt"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q19",
+          question: "Black nationalism was supported by whom?",
+          options: [
+            "W.E.B. Du Bois",
+            "Marcus Garvey",
+            "Booker T. Washington",
+            "Langston Hughes"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "l3q20",
+          question: "In lesson 6, what does the political cartoon of the Trojan Horse represent regarding the New Deal?",
+          options: [
+            "It shows support for the New Deal programs",
+            "It symbolizes critics' belief that the New Deal was a threat to traditional American values and capitalism",
+            "It represents the success of the New Deal",
+            "It illustrates the economic recovery"
           ],
           correctAnswer: 1
         }
