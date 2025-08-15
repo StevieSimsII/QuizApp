@@ -3,7 +3,7 @@ import React from 'react';
 function QuizSelector({ lessons, onLessonSelect, onBackToSubjects }) {
   return (
     <div className="space-y-4">
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex justify-between items-center mb-10">
         <button
           onClick={onBackToSubjects}
           className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-200"
