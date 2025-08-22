@@ -7,6 +7,7 @@ import Quiz from './components/Quiz';
 function App() {
   const [selectedGrade, setSelectedGrade] = useState(null);
   const [selectedSubject, setSelectedSubject] = useState(null);
+  const [selectedChapter, setSelectedChapter] = useState(null);
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [quizComplete, setQuizComplete] = useState(false);
   const [score, setScore] = useState(null);
@@ -25,14 +26,25 @@ function App() {
     setSelectedSubject(subject);
   };
 
+  const handleChapterSelect = (chapter) => {
+    setSelectedChapter(chapter);
+  };
+
   const handleBackToGrades = () => {
     setSelectedGrade(null);
     setSelectedSubject(null);
+    setSelectedChapter(null);
     setSelectedLesson(null);
   };
 
   const handleBackToSubjects = () => {
     setSelectedSubject(null);
+    setSelectedChapter(null);
+    setSelectedLesson(null);
+  };
+
+  const handleBackToChapters = () => {
+    setSelectedChapter(null);
     setSelectedLesson(null);
   };
 
@@ -44,6 +56,7 @@ function App() {
   const handleRestart = () => {
     setSelectedGrade(null);
     setSelectedSubject(null);
+    setSelectedChapter(null);
     setSelectedLesson(null);
     setQuizComplete(false);
     setScore(null);
@@ -83,21 +96,71 @@ function App() {
         <h2 className="text-xl font-semibold text-center">Select a Subject</h2>
       </div>
       <div className="grid gap-4">
-        {Object.keys(allGradeData[selectedGrade].subjects).map((subject) => (
-          <button
-            key={subject}
-            onClick={() => handleSubjectSelect(subject)}
-            className="w-full px-4 py-3 text-left bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors duration-200"
-          >
-            <h3 className="text-lg font-medium text-blue-900">{subject}</h3>
-            <p className="text-sm text-blue-600">
-              {allGradeData[selectedGrade].subjects[subject].lessons.length} quizzes available
-            </p>
-          </button>
-        ))}
+        {Object.keys(allGradeData[selectedGrade].subjects).map((subject) => {
+          const subjectData = allGradeData[selectedGrade].subjects[subject];
+          const chapterCount = subjectData.chapters ? Object.keys(subjectData.chapters).length : subjectData.lessons?.length || 0;
+          return (
+            <button
+              key={subject}
+              onClick={() => handleSubjectSelect(subject)}
+              className="w-full px-4 py-3 text-left bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors duration-200"
+            >
+              <h3 className="text-lg font-medium text-blue-900">{subject}</h3>
+              <p className="text-sm text-blue-600">
+                {subjectData.chapters ? `${chapterCount} chapters available` : `${chapterCount} quizzes available`}
+              </p>
+            </button>
+          );
+        })}
       </div>
     </div>
   );
+
+  const renderChapterSelector = () => {
+    const subjectData = allGradeData[selectedGrade].subjects[selectedSubject];
+    
+    // If no chapters structure, go directly to lessons
+    if (!subjectData.chapters) {
+      return (
+        <QuizSelector
+          lessons={subjectData.lessons}
+          onLessonSelect={handleLessonSelect}
+          onBackToSubjects={handleBackToSubjects}
+        />
+      );
+    }
+
+    return (
+      <div className="space-y-4">
+        <div className="mb-10">
+          <div className="flex justify-center mb-6">
+            <button
+              onClick={handleBackToSubjects}
+              className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-200"
+            >
+              Back to Subjects
+            </button>
+          </div>
+          <h2 className="text-xl font-semibold text-center">Select a Chapter</h2>
+        </div>
+        <div className="grid gap-4">
+          {Object.entries(subjectData.chapters).map(([chapterKey, chapterData]) => (
+            <button
+              key={chapterKey}
+              onClick={() => handleChapterSelect(chapterKey)}
+              className="w-full px-4 py-3 text-left bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors duration-200"
+            >
+              <h3 className="text-lg font-medium text-blue-900">{chapterKey}</h3>
+              <p className="text-sm text-blue-600 font-medium">{chapterData.title}</p>
+              <p className="text-sm text-blue-600">
+                {chapterData.lessons.length} quizzes available
+              </p>
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
@@ -113,11 +176,14 @@ function App() {
                   renderGradeSelector()
                 ) : !selectedSubject ? (
                   renderSubjectSelector()
+                ) : !selectedChapter ? (
+                  renderChapterSelector()
                 ) : !selectedLesson ? (
                   <QuizSelector
-                    lessons={allGradeData[selectedGrade].subjects[selectedSubject].lessons}
+                    lessons={allGradeData[selectedGrade].subjects[selectedSubject].chapters[selectedChapter].lessons}
                     onLessonSelect={handleLessonSelect}
-                    onBackToSubjects={handleBackToSubjects}
+                    onBackToSubjects={handleBackToChapters}
+                    backButtonText="Back to Chapters"
                   />
                 ) : (
                   <Quiz

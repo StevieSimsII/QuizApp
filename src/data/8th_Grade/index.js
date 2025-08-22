@@ -4,8 +4,9 @@ const allQuizData = {
   subjects: {
     Science: scienceQuizData
   },
+  // Legacy lessons structure for backward compatibility
   lessons: [
-    ...scienceQuizData.lessons
+    ...Object.values(scienceQuizData.chapters).flatMap(chapter => chapter.lessons)
   ]
 };
 

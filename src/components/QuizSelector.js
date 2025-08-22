@@ -1,6 +1,6 @@
 import React from 'react';
 
-function QuizSelector({ lessons, onLessonSelect, onBackToSubjects }) {
+function QuizSelector({ lessons, onLessonSelect, onBackToSubjects, backButtonText = "Back to Subjects" }) {
   return (
     <div className="space-y-4">
       <div className="flex justify-between items-center mb-10">
@@ -8,7 +8,7 @@ function QuizSelector({ lessons, onLessonSelect, onBackToSubjects }) {
           onClick={onBackToSubjects}
           className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-200"
         >
-          Back to Subjects
+          {backButtonText}
         </button>
         <h2 className="text-xl font-semibold text-center">Select a Quiz</h2>
         <div className="w-24"></div> {/* Spacer for alignment */}

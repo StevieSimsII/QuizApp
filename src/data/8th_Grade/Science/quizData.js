@@ -1,11 +1,14 @@
 const scienceQuizData = {
-  lessons: [
-    {
-      id: "rootwords1",
-      title: "Root Word Quiz 1",
-      subject: "Science",
-      description: "Test your knowledge of root words and affixes",
-      questions: [
+  chapters: {
+    "Chapter 1": {
+      title: "Introduction to Science and Lab Safety",
+      lessons: [
+        {
+          id: "rootwords1",
+          title: "Root Word Quiz 1",
+          subject: "Science",
+          description: "Test your knowledge of root words and affixes",
+          questions: [
         {
           id: "rw1q1",
           question: "What does the root 'A-' or 'an-' mean?",
@@ -1304,8 +1307,10 @@ const scienceQuizData = {
           correctAnswer: 1
         }
       ]
+        }
+      ]
     }
-  ]
+  }
 };
 
 export default scienceQuizData;
