@@ -1021,6 +1021,289 @@ const scienceQuizData = {
           correctAnswer: 1
         }
       ]
+    },
+    {
+      id: "introscience1",
+      title: "Introduction to Science Quiz",
+      subject: "Science",
+      description: "Test your knowledge of scientific methods, processes, and fundamental concepts",
+      questions: [
+        {
+          id: "is1q1",
+          question: "What is the first step in the scientific method?",
+          options: [
+            "Form a hypothesis",
+            "Make an observation or ask a question",
+            "Conduct an experiment",
+            "Draw conclusions"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q2",
+          question: "What is a hypothesis?",
+          options: [
+            "A proven fact",
+            "The final result of an experiment",
+            "An educated guess that can be tested",
+            "A random prediction"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: "is1q3",
+          question: "What is the difference between an independent and dependent variable?",
+          options: [
+            "Independent variables change, dependent variables stay the same",
+            "Independent variables are controlled by the scientist, dependent variables respond to changes",
+            "There is no difference",
+            "Dependent variables are controlled, independent variables respond"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q4",
+          question: "What is a control group in an experiment?",
+          options: [
+            "The group that receives the experimental treatment",
+            "The group that shows the best results",
+            "The group that receives no treatment or standard treatment for comparison",
+            "The largest group in the experiment"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: "is1q5",
+          question: "What does it mean for an experiment to be reproducible?",
+          options: [
+            "It can only be done once",
+            "Other scientists can repeat it and get similar results",
+            "It must use expensive equipment",
+            "It takes a long time to complete"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q6",
+          question: "What is the purpose of peer review in science?",
+          options: [
+            "To make science more difficult",
+            "To have other scientists check and evaluate research before publication",
+            "To copy other scientists' work",
+            "To compete with other researchers"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q7",
+          question: "What is a scientific theory?",
+          options: [
+            "Just a guess about how something works",
+            "A well-tested explanation supported by evidence from many experiments",
+            "The same thing as a hypothesis",
+            "Something that has never been tested"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q8",
+          question: "What is the metric system?",
+          options: [
+            "An old measurement system",
+            "The standard system of measurement used in science worldwide",
+            "Only used in the United States",
+            "A system used only for chemistry"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q9",
+          question: "What is the basic unit of length in the metric system?",
+          options: [
+            "Foot",
+            "Inch",
+            "Meter",
+            "Yard"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: "is1q10",
+          question: "What is the basic unit of mass in the metric system?",
+          options: [
+            "Pound",
+            "Kilogram",
+            "Ounce",
+            "Ton"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q11",
+          question: "What is the basic unit of volume in the metric system?",
+          options: [
+            "Gallon",
+            "Quart",
+            "Liter",
+            "Cup"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: "is1q12",
+          question: "What does the prefix 'milli-' mean?",
+          options: [
+            "One thousand",
+            "One hundredth",
+            "One thousandth",
+            "One million"
+          ],
+          correctAnswer: 2
+        },
+        {
+          id: "is1q13",
+          question: "What does the prefix 'kilo-' mean?",
+          options: [
+            "One thousand",
+            "One hundred",
+            "One tenth",
+            "One million"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "is1q14",
+          question: "What is the difference between accuracy and precision?",
+          options: [
+            "They mean the same thing",
+            "Accuracy is how close to the true value, precision is how close repeated measurements are to each other",
+            "Precision is how close to the true value, accuracy is how close repeated measurements are to each other",
+            "Accuracy is for chemistry, precision is for physics"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q15",
+          question: "What is a graduated cylinder used for?",
+          options: [
+            "Heating liquids",
+            "Measuring volume of liquids accurately",
+            "Stirring solutions",
+            "Storing chemicals"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q16",
+          question: "What is a beaker primarily used for?",
+          options: [
+            "Precise volume measurements",
+            "Holding and mixing liquids",
+            "Heating solids",
+            "Measuring mass"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q17",
+          question: "What is the purpose of a lab notebook?",
+          options: [
+            "To record observations, data, and procedures",
+            "To copy homework answers",
+            "To draw pictures",
+            "To write personal notes"
+          ],
+          correctAnswer: 0
+        },
+        {
+          id: "is1q18",
+          question: "Why is it important to make careful observations in science?",
+          options: [
+            "To impress the teacher",
+            "Observations provide evidence to support or reject hypotheses",
+            "To fill up time",
+            "Observations are not important"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q19",
+          question: "What is a qualitative observation?",
+          options: [
+            "An observation using numbers and measurements",
+            "An observation using the five senses to describe properties",
+            "An observation made with expensive equipment",
+            "An observation that takes a long time"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q20",
+          question: "What is a quantitative observation?",
+          options: [
+            "An observation using the five senses",
+            "An observation involving numbers and measurements",
+            "An observation made quickly",
+            "An observation about color"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q21",
+          question: "What should you do if your experimental results don't support your hypothesis?",
+          options: [
+            "Change the data to match your hypothesis",
+            "Analyze the results and consider revising your hypothesis",
+            "Ignore the results",
+            "Give up on the experiment"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q22",
+          question: "What is the purpose of conducting multiple trials in an experiment?",
+          options: [
+            "To waste time",
+            "To increase reliability and identify errors or unusual results",
+            "To use more materials",
+            "To make the experiment harder"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q23",
+          question: "What is a scientific law?",
+          options: [
+            "A rule made by scientists",
+            "A description of a natural phenomenon that is always true under specific conditions",
+            "The same thing as a theory",
+            "A guess about nature"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q24",
+          question: "What is the difference between mass and weight?",
+          options: [
+            "They are the same thing",
+            "Mass is the amount of matter in an object, weight is the force of gravity on that mass",
+            "Weight is constant, mass changes",
+            "Mass is measured in pounds, weight in kilograms"
+          ],
+          correctAnswer: 1
+        },
+        {
+          id: "is1q25",
+          question: "Why do scientists use models?",
+          options: [
+            "To make science more complicated",
+            "To represent and help understand complex systems or concepts",
+            "Because they can't study real things",
+            "To waste time"
+          ],
+          correctAnswer: 1
+        }
+      ]
     }
   ]
 };

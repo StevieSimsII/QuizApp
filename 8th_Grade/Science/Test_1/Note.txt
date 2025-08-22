@@ -1,0 +1,40 @@
+# Introduction to Science Quiz - Study Guide Reference
+
+## Quiz Added: "Introduction to Science Quiz" 
+- **Quiz ID**: introscience1
+- **Questions**: 25 multiple choice questions
+- **Focus**: Scientific methods, processes, and fundamental concepts
+
+## Topics Covered:
+
+### Scientific Method (Questions 1-7)
+- Steps of the scientific method
+- Hypothesis formation and testing
+- Variables (independent vs dependent)
+- Control groups
+- Reproducibility and peer review
+- Scientific theories vs laws
+
+### Metric System & Measurements (Questions 8-14)
+- Basic metric units (meter, kilogram, liter)
+- Metric prefixes (milli-, kilo-)
+- Accuracy vs precision
+- Scientific measurement standards
+
+### Laboratory Equipment & Procedures (Questions 15-17)
+- Graduated cylinders and beakers
+- Lab notebook importance
+- Proper data recording
+
+### Scientific Observations (Questions 18-25)
+- Qualitative vs quantitative observations
+- Handling unexpected results
+- Multiple trials importance
+- Mass vs weight concepts
+- Scientific modeling
+
+## Integration with Existing Content:
+This quiz complements the lab safety quizzes by covering the foundational science concepts that students need before conducting experiments safely.
+
+## Study Guide Reference:
+Based on standard 8th grade introduction to science curriculum, designed to prepare students for laboratory work and scientific thinking.
