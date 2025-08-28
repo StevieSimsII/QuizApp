@@ -74,7 +74,9 @@ function App() {
           >
             <h3 className="text-lg font-medium text-blue-900">{grade}</h3>
             <p className="text-sm text-blue-600">
-              {Object.keys(allGradeData[grade].subjects).length} subjects available
+              {Object.keys(allGradeData[grade].subjects).length === 1 
+                ? "1 subject available" 
+                : `${Object.keys(allGradeData[grade].subjects).length} subjects available`}
             </p>
           </button>
         ))}
@@ -107,7 +109,9 @@ function App() {
             >
               <h3 className="text-lg font-medium text-blue-900">{subject}</h3>
               <p className="text-sm text-blue-600">
-                {subjectData.chapters ? `${chapterCount} chapters available` : `${chapterCount} quizzes available`}
+                {subjectData.chapters 
+                  ? (chapterCount === 1 ? "1 chapter available" : `${chapterCount} chapters available`)
+                  : (chapterCount === 1 ? "1 quiz available" : `${chapterCount} quizzes available`)}
               </p>
             </button>
           );
@@ -153,7 +157,9 @@ function App() {
               <h3 className="text-lg font-medium text-blue-900">{chapterKey}</h3>
               <p className="text-sm text-blue-600 font-medium">{chapterData.title}</p>
               <p className="text-sm text-blue-600">
-                {chapterData.lessons.length} quizzes available
+                {chapterData.lessons.length === 1 
+                  ? "1 quiz available" 
+                  : `${chapterData.lessons.length} quizzes available`}
               </p>
             </button>
           ))}
