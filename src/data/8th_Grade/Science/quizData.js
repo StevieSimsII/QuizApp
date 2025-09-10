@@ -1309,6 +1309,239 @@ const scienceQuizData = {
       ]
         }
       ]
+    },
+    "Chapter 2": {
+      title: "Scientific Root Words",
+      lessons: [
+        {
+          id: "rootwords2",
+          title: "Root Word Quiz 2",
+          subject: "Science",
+          description: "Test your knowledge of advanced root words and their meanings",
+          questions: [
+            {
+              id: "rw2q1",
+              question: "What does the root 'Aero-' mean?",
+              options: [
+                "water",
+                "air",
+                "earth",
+                "fire"
+              ],
+              correctAnswer: 1
+            },
+            {
+              id: "rw2q2",
+              question: "What does the root 'Atmo-' mean?",
+              options: [
+                "vapor",
+                "liquid",
+                "solid",
+                "gas"
+              ],
+              correctAnswer: 0
+            },
+            {
+              id: "rw2q3",
+              question: "What does the root 'Baro-' mean?",
+              options: [
+                "light",
+                "heavy",
+                "weight",
+                "mass"
+              ],
+              correctAnswer: 2
+            },
+            {
+              id: "rw2q4",
+              question: "What does the root 'Chem-' mean?",
+              options: [
+                "dealing with chemicals",
+                "dealing with physics",
+                "dealing with biology",
+                "dealing with math"
+              ],
+              correctAnswer: 0
+            },
+            {
+              id: "rw2q5",
+              question: "What does the root 'Grav-' mean?",
+              options: [
+                "light",
+                "medium",
+                "heavy",
+                "weightless"
+              ],
+              correctAnswer: 2
+            },
+            {
+              id: "rw2q6",
+              question: "What does the root 'Med-' mean?",
+              options: [
+                "beginning",
+                "end",
+                "side",
+                "middle"
+              ],
+              correctAnswer: 3
+            },
+            {
+              id: "rw2q7",
+              question: "What does the root 'Mes-' mean?",
+              options: [
+                "middle, half, intermediate",
+                "beginning, start, initial",
+                "end, final, complete",
+                "whole, entire, full"
+              ],
+              correctAnswer: 0
+            },
+            {
+              id: "rw2q8",
+              question: "What does the root 'Mole-' mean?",
+              options: [
+                "volume",
+                "mass",
+                "density",
+                "temperature"
+              ],
+              correctAnswer: 1
+            },
+            {
+              id: "rw2q9",
+              question: "What does the root 'Oxy-' mean?",
+              options: [
+                "sharp, acid, oxygen",
+                "dull, base, nitrogen",
+                "smooth, neutral, carbon",
+                "rough, alkaline, hydrogen"
+              ],
+              correctAnswer: 0
+            },
+            {
+              id: "rw2q10",
+              question: "What does the root 'Pseudo-' mean?",
+              options: [
+                "true, genuine",
+                "real, authentic",
+                "false, deceptive",
+                "clear, obvious"
+              ],
+              correctAnswer: 2
+            },
+            {
+              id: "rw2q11",
+              question: "What does the root 'Pyr-' mean?",
+              options: [
+                "water, liquid",
+                "heat, fire",
+                "ice, cold",
+                "air, wind"
+              ],
+              correctAnswer: 1
+            },
+            {
+              id: "rw2q12",
+              question: "What does the root 'Strat-' mean?",
+              options: [
+                "point",
+                "line",
+                "layer",
+                "circle"
+              ],
+              correctAnswer: 2
+            },
+            {
+              id: "rw2q13",
+              question: "What does the root 'Centi-' mean?",
+              options: [
+                "thousand",
+                "hundred",
+                "ten",
+                "hundredth"
+              ],
+              correctAnswer: 3
+            },
+            {
+              id: "rw2q14",
+              question: "What does the root 'Deca-' mean?",
+              options: [
+                "ten",
+                "hundred",
+                "thousand",
+                "million"
+              ],
+              correctAnswer: 0
+            },
+            {
+              id: "rw2q15",
+              question: "What does the root 'Dia' mean?",
+              options: [
+                "night",
+                "week",
+                "month",
+                "day"
+              ],
+              correctAnswer: 3
+            },
+            {
+              id: "rw2q16",
+              question: "What does the root 'Hecto-' mean?",
+              options: [
+                "ten",
+                "hundred",
+                "thousand",
+                "million"
+              ],
+              correctAnswer: 1
+            },
+            {
+              id: "rw2q17",
+              question: "What does the root 'Hex-' mean?",
+              options: [
+                "four",
+                "five",
+                "six",
+                "seven"
+              ],
+              correctAnswer: 2
+            },
+            {
+              id: "rw2q18",
+              question: "What does the suffix '-gram, graph' mean?",
+              options: [
+                "record, writing",
+                "sound, hearing",
+                "sight, seeing",
+                "touch, feeling"
+              ],
+              correctAnswer: 0
+            },
+            {
+              id: "rw2q19",
+              question: "What does the root 'Ultra-' mean?",
+              options: [
+                "below",
+                "within",
+                "beside",
+                "beyond"
+              ],
+              correctAnswer: 3
+            },
+            {
+              id: "rw2q20",
+              question: "What does the root 'Quin-' mean?",
+              options: [
+                "three",
+                "four",
+                "five",
+                "six"
+              ],
+              correctAnswer: 2
+            }
+          ]
+        }
+      ]
     }
   }
 };
