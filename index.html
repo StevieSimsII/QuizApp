@@ -2,108 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chapter 3 Science Test</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      background-color: #f4f4f4;
-    }
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-    button {
-      margin: 10px 5px 0 0;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      background: #007bff;
-      color: white;
-      cursor: pointer;
-    }
-    button:disabled {
-      background: #ccc;
-    }
-    .correct { color: green; }
-    .incorrect { color: red; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c2340" />
+  <meta name="description" content="Holy Cross 9th Grade study app — lessons, flashcards, and interactive quizzes." />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Add-to-Home-Screen on iPhone -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="HC Study" />
+
+  <title>Holy Cross Study — 9th Grade</title>
+  <link rel="stylesheet" href="assets/app.css" />
 </head>
 <body>
-  <div id="app" class="card">
-    <h2 id="title">Chapter 3 Science Test</h2>
-    <div id="quiz"></div>
-    <div id="navigation"></div>
-    <div id="score" style="margin-top: 20px;"></div>
+  <a class="skip-link" href="#view">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="crest" aria-hidden="true">HC</div>
+      <div class="topbar__titles">
+        <div class="topbar__title" id="topbar-title">Physical Science</div>
+        <div class="topbar__sub" id="topbar-sub">9th Grade</div>
+      </div>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Change theme">◐</button>
+    </div>
+  </header>
+
+  <main class="shell">
+    <div id="view"></div>
+  </main>
+
+  <div class="actionbar" id="actionbar" hidden>
+    <div class="actionbar__inner" id="actionbar-inner"></div>
   </div>
 
-  <script>
-    // The full quiz logic and question data was added earlier...
-    // For brevity, we will indicate placeholder content here
-    const questions = [/* full list from earlier update */];
+  <div class="backdrop" id="backdrop" hidden>
+    <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title"></div>
+  </div>
 
-    questions.sort(() => 0.5 - Math.random());
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-    let current = 0;
-    let score = 0;
+  <noscript>
+    <p style="padding:24px;text-align:center">
+      This study app needs JavaScript enabled.
+    </p>
+  </noscript>
 
-    function loadQuestion() {
-      const q = questions[current];
-      const quizDiv = document.getElementById("quiz");
-      const navDiv = document.getElementById("navigation");
-      const scoreDiv = document.getElementById("score");
-      scoreDiv.textContent = "";
-
-      quizDiv.innerHTML = `<h3>Question ${current + 1} of ${questions.length}</h3>
-        <p>${q.q}</p>
-        ${q.options.map((opt, i) => `<div><button onclick="selectAnswer('${opt.replace(/'/g, "\'")}')">${opt}</button></div>`).join('')}`;
-
-      navDiv.innerHTML = "";
-    }
-
-    function selectAnswer(answer) {
-      const isCorrect = answer === questions[current].a;
-      const feedback = document.createElement("p");
-      feedback.textContent = isCorrect ? "Correct!" : `Incorrect. Correct answer: ${questions[current].a}`;
-      feedback.className = isCorrect ? "correct" : "incorrect";
-      document.getElementById("quiz").appendChild(feedback);
-
-      if (isCorrect) score++;
-
-      const nav = document.getElementById("navigation");
-      nav.innerHTML = `<button onclick='nextQuestion()'>Next</button>`;
-    }
-
-    function nextQuestion() {
-      current++;
-      if (current < questions.length) {
-        loadQuestion();
-      } else {
-        showScore();
-      }
-    }
-
-    function showScore() {
-      const quizDiv = document.getElementById("quiz");
-      const navDiv = document.getElementById("navigation");
-      quizDiv.innerHTML = `<h3>Quiz Complete!</h3><p>You scored ${score} out of ${questions.length}</p>`;
-      navDiv.innerHTML = `<button onclick='restartQuiz()'>Take Quiz Again</button>`;
-    }
-
-    function restartQuiz() {
-      current = 0;
-      score = 0;
-      questions.sort(() => 0.5 - Math.random());
-      loadQuestion();
-    }
-
-    loadQuestion();
-  </script>
+  <script src="data/9th-grade/physical-science.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>

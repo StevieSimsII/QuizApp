@@ -1,106 +1,83 @@
-# Educational Quiz Application
+# Holy Cross Study
 
-An interactive quiz platform for multiple subjects including Social Studies, Science, English, and Physical Education.
+A mobile-first study app for Holy Cross School coursework — lesson notes, two-sided
+flashcards, and interactive quizzes. Built for iPhone first, with light and dark themes
+drawn from the school's own brand colors (navy `#0c2340`, gold `#b48f40`, taken from
+hcnola.org).
 
-## Features
+**Current course: 9th Grade — Physical Science, Lessons 1–3.**
 
-- Multi-subject quiz platform
-- Dynamic quiz generation from question sets
-- Multiple choice questions with detailed explanations
-- One question at a time display with navigation
-- Score tracking and answer review
-- Responsive design for all devices
-- Organized study guides for each subject
+## Running it
 
-## Subjects Covered
+There is no build step, no server, no account, and no external API. Open `index.html`.
 
-### Social Studies
-- World War II (Chapter 14)
-- Imperialism and World War I (Chapter 12)
-- The Roaring Twenties and Great Depression (Chapter 13)
+For a local preview over HTTP (needed if your browser blocks `file://` script loading):
 
-### Science
-- Human Body Systems and Organization
-- Ecosystems and Interactions
-- Environmental Systems
-
-### English
-- Farewell to Manzanar Study Guide
-
-### Physical Education
-- Baseball Rules and Techniques
-
-## Tech Stack
-
-- React.js
-- TailwindCSS for styling
-- Local state management
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/StevieSimsII/QuizApp.git
-cd QuizApp
+```powershell
+Push-Location "C:\Documents\GitHubCode\Quiz_App"; python -m http.server 8899; Pop-Location
 ```
 
-2. Install dependencies:
-```bash
-npm install
+Then visit <http://localhost:8899/>.
+
+On iPhone, use Share → **Add to Home Screen** for a full-screen, app-like experience.
+
+## What it does
+
+- **Home** — course progress, a card per lesson, all-flashcards, mixed quiz, and
+  "review missed concepts."
+- **Lesson** — four tabs: Overview, Vocabulary, Practice, Review.
+- **Flashcards** — every vocabulary record becomes a two-sided card. Shuffle, prev/next,
+  flip, "Know it," and "Review again." Study all terms or one lesson at a time.
+- **Quizzes** — multiple choice, matching, short answer, ordering, calculation, and
+  graph selection. Immediate feedback, with the explanation shown only after you submit.
+  Plus an auto-built vocabulary check per lesson.
+- **Review** — missed questions and flagged terms collect per lesson and can be retried
+  on their own.
+- **Progress** — known terms, flagged terms, quiz attempts, best scores, and missed
+  concepts persist in `localStorage`. Reset is behind a confirmation step.
+
+### Accessibility and motion
+
+Semantic HTML, a skip link, visible focus rings, 44px tap targets, ARIA roles on tabs,
+radio groups, and live feedback regions, full keyboard control (flashcards: `Space`
+flips, `←`/`→` move, `K` marks known, `R` flags for review), and
+`prefers-reduced-motion` support.
+
+## Layout
+
+```
+index.html                          app shell
+assets/app.css                      design system, light + dark themes
+assets/app.js                       engine — routing, flashcards, quiz, grading, storage
+data/9th-grade/physical-science.js  course content (lessons, terms, question bank)
+9th_Grade/Physical_Science/         source brief and reference material
+8th_Grade/                          previous year's source material
 ```
 
-3. Start the development server:
-```bash
-npm start
-```
+## Adding a lesson or a course
 
-The application will open in your default browser at `http://localhost:3000`.
+Content is fully separated from presentation. Copy
+`data/9th-grade/physical-science.js`, edit the `lessons`, `terms`, and `questions`
+arrays, and add a `<script src>` tag for it in `index.html`. The engine reads whatever
+`window.HC_CONTENT` contains — no changes to `app.js` are needed.
 
-### Building for Production
+Question formats supported by the engine:
 
-To create a production build:
+| Format | Answer shape |
+|---|---|
+| `multiple-choice` | `choices: []`, `answer: "…"` |
+| `graph-selection` | `choices: []`, `answer: "…"` |
+| `calculation` | `value: 8`, `unit: "g/cm³"`, `tolerance: 0` |
+| `short-answer` | `keywords: [["synonym", "synonym"], …]` — every group must match |
+| `ordering` | `items: []`, `answer: []` in the correct sequence |
+| `matching` | `pairs: [{ left, right }]` |
 
-```bash
-npm run build
-```
+Short-answer grading is keyword-based, so the learner can override the mark after
+submitting ("I had it right" / "Mark for review").
 
-This will create an optimized production build in the `build` folder.
+## Sources
 
-## Project Structure
-
-```
-src/
-  ├── components/     # React components
-  ├── data/          
-  │   ├── subjects/  # Subject-specific quiz data
-  │   │   ├── Social Studies/
-  │   │   ├── Science/
-  │   │   ├── English/
-  │   │   └── PE/
-  │   └── study-guides/  # Subject-specific study materials
-  │       ├── Social Studies/
-  │       ├── Science/
-  │       ├── English/
-  │       └── PE/
-  ├── styles/        # CSS and styling files
-  └── App.js         # Main application component
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+Lesson content is transcribed in `9th_Grade/Physical_Science/Physical Science Web App
+Brief.md`, from the McGraw Hill Physical Science eBook — *The Methods of Science*,
+*Standards of Measurement*, and *Communicating with Graphs*. Definitions are concise
+study paraphrases of the highlighted lesson content; no textbook claims were invented.
