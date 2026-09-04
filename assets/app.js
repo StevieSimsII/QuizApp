@@ -135,10 +135,14 @@
       .map(function (q) { return q.id; });
   }
 
+  function lessonQuestionIds(lesson) {
+    return (lesson.questionIds || []).concat(lesson.mcQuestionIds || []);
+  }
+
   function lessonProgress(lesson) {
     var terms = lesson.termIds;
     var known = terms.filter(function (id) { return termState(id) === 'known'; }).length;
-    var qs = lesson.questionIds;
+    var qs = lessonQuestionIds(lesson);
     var right = qs.filter(function (id) {
       var a = progress.questionAttempts[id];
       return a && a.correct;
@@ -415,10 +419,16 @@
       h('div', {}, lessonCards),
       h('h2', { class: 'section-label', text: 'Study everything' }),
       h('div', { class: 'card' }, [
-        h('div', { class: 'btn-row', style: 'margin-bottom:10px' }, [
+        h('p', { style: 'font-size:14px;color:var(--text-dim);margin:0 0 12px',
+          text: topicMcQuestions().length + ' multiple-choice and true/false questions covering every highlighted term across Lessons 1–3.' }),
+        h('button', {
+          class: 'btn btn--gold btn--block', type: 'button', text: 'Full quiz',
+          onclick: function () { startQuiz('mc'); }
+        }),
+        h('div', { class: 'btn-row', style: 'margin:10px 0' }, [
           h('button', { class: 'btn btn--primary', type: 'button', text: 'All flashcards',
             onclick: function () { startDeck('all'); } }),
-          h('button', { class: 'btn btn--gold', type: 'button', text: 'Mixed quiz',
+          h('button', { class: 'btn btn--subtle', type: 'button', text: 'Mixed formats',
             onclick: function () { startQuiz('mixed'); } })
         ]),
         h('button', {
@@ -579,7 +589,7 @@
       h('button', { class: 'btn btn--ghost', type: 'button', text: 'Flashcards',
         onclick: function () { startDeck(lesson.id); } }),
       h('button', { class: 'btn btn--primary', type: 'button', text: 'Practice quiz',
-        onclick: function () { startQuiz(lesson.id); } })
+        onclick: function () { startQuiz('mc:' + lesson.id); } })
     ]);
   }
 
@@ -632,18 +642,36 @@
 
   function renderPracticePanel(panel, lesson) {
     var qs = lesson.questionIds.map(function (id) { return questionById[id]; });
+    var mcQs = (lesson.mcQuestionIds || []).map(function (id) { return questionById[id]; });
     var answered = qs.filter(function (q) { return progress.questionAttempts[q.id]; }).length;
     var right = qs.filter(function (q) {
       var a = progress.questionAttempts[q.id];
       return a && a.correct;
     }).length;
+    var mcAnswered = mcQs.filter(function (q) { return progress.questionAttempts[q.id]; }).length;
+    var mcRight = mcQs.filter(function (q) {
+      var a = progress.questionAttempts[q.id];
+      return a && a.correct;
+    }).length;
     var best = progress.bestQuizScore[lesson.id];
+    var mcBest = progress.bestQuizScore['mc:' + lesson.id];
 
     append(panel, [
       h('div', { class: 'card' }, [
+        h('h2', { style: 'font-size:17px;font-weight:800;margin-bottom:4px', text: 'Full quiz' }),
+        h('p', { style: 'font-size:14px;color:var(--text-dim)',
+          text: mcQs.length + ' multiple-choice and true/false questions covering every highlighted term in this lesson.' }),
+        h('div', { style: 'font-size:13px;color:var(--text-faint);font-weight:650;margin-bottom:12px',
+          text: mcRight + ' of ' + mcQs.length + ' currently correct · ' + mcAnswered + ' attempted' +
+            (mcBest != null ? ' · best score ' + mcBest + '%' : '') }),
+        h('button', { class: 'btn btn--gold btn--block', type: 'button',
+          text: mcAnswered ? 'Retake full quiz' : 'Start full quiz',
+          onclick: function () { startQuiz('mc:' + lesson.id); } })
+      ]),
+      h('div', { class: 'card' }, [
         h('h2', { style: 'font-size:17px;font-weight:800;margin-bottom:4px', text: 'Lesson quiz' }),
         h('p', { style: 'font-size:14px;color:var(--text-dim)',
-          text: qs.length + ' questions from the lesson question bank. Feedback appears after each answer.' }),
+          text: qs.length + ' mixed-format questions from the lesson question bank. Feedback appears after each answer.' }),
         h('div', { style: 'font-size:13px;color:var(--text-faint);font-weight:650;margin-bottom:12px',
           text: right + ' of ' + qs.length + ' currently correct · ' + answered + ' attempted' +
             (best != null ? ' · best score ' + best + '%' : '') }),
@@ -655,7 +683,7 @@
         h('h2', { style: 'font-size:17px;font-weight:800;margin-bottom:4px', text: 'Vocabulary check' }),
         h('p', { style: 'font-size:14px;color:var(--text-dim)',
           text: 'Ten definitions from this lesson, one term to pick each time. Rebuilt fresh every run.' }),
-        h('button', { class: 'btn btn--gold btn--block', type: 'button', text: 'Start vocabulary check',
+        h('button', { class: 'btn btn--subtle btn--block', type: 'button', text: 'Start vocabulary check',
           onclick: function () { startQuiz('vocab:' + lesson.id); } })
       ]),
       h('div', { class: 'card' }, [
@@ -876,6 +904,7 @@
   // ---------------------------------------------------------
   var FORMAT_LABEL = {
     'multiple-choice': 'Multiple choice',
+    'true-false': 'True or false',
     'matching': 'Matching',
     'short-answer': 'Short answer',
     'ordering': 'Ordering',
@@ -883,8 +912,21 @@
     'graph-selection': 'Choose the graph'
   };
 
+  function coreQuestions() {
+    return course.questions.filter(function (q) { return q.bank !== 'topic-mc'; });
+  }
+
+  function topicMcQuestions() {
+    return course.questions.filter(function (q) { return q.bank === 'topic-mc'; });
+  }
+
   function quizQuestions(scope) {
-    if (scope === 'mixed') return shuffle(course.questions);
+    if (scope === 'mixed') return shuffle(coreQuestions());
+    if (scope === 'mc') return shuffle(topicMcQuestions());
+    if (scope.indexOf('mc:') === 0) {
+      var mcid = scope.slice(3);
+      return shuffle(topicMcQuestions().filter(function (q) { return q.lessonId === mcid; }));
+    }
     if (scope === 'missed') {
       return shuffle(missedQuestionIds().map(function (id) { return questionById[id]; }));
     }
@@ -899,11 +941,15 @@
         : course.terms.filter(function (t) { return t.lessonId === vid; });
       return buildVocabQuestions(pool, 10);
     }
-    return shuffle(course.questions.filter(function (q) { return q.lessonId === scope; }));
+    return shuffle(coreQuestions().filter(function (q) { return q.lessonId === scope; }));
   }
 
   function quizTitle(scope) {
     if (scope === 'mixed') return 'Mixed quiz';
+    if (scope === 'mc') return 'Full quiz';
+    if (scope.indexOf('mc:') === 0) {
+      return 'Lesson ' + lessonById[scope.slice(3)].number + ' · full quiz';
+    }
     if (scope === 'missed') return 'Missed concepts';
     if (scope.indexOf('missed:') === 0) return 'Lesson ' + lessonById[scope.slice(7)].number + ' · missed';
     if (scope.indexOf('vocab:') === 0) return 'Lesson ' + lessonById[scope.slice(6)].number + ' · vocabulary';
@@ -968,6 +1014,7 @@
   function buildAnswerUI(q) {
     switch (q.format) {
       case 'multiple-choice':
+      case 'true-false':
       case 'graph-selection': return uiChoices(q);
       case 'calculation': return uiCalculation(q);
       case 'short-answer': return uiShortAnswer(q);
@@ -1124,6 +1171,7 @@
     var r = session.response;
     switch (q.format) {
       case 'multiple-choice':
+      case 'true-false':
       case 'graph-selection':
         return r === q.answer;
       case 'calculation':

@@ -23,14 +23,17 @@ On iPhone, use Share → **Add to Home Screen** for a full-screen, app-like expe
 
 ## What it does
 
-- **Home** — course progress, a card per lesson, all-flashcards, mixed quiz, and
-  "review missed concepts."
+- **Home** — course progress, a card per lesson, all-flashcards, a full
+  multiple-choice / true-false quiz covering every highlighted term, the original
+  mixed-format quiz, and "review missed concepts."
 - **Lesson** — four tabs: Overview, Vocabulary, Practice, Review.
 - **Flashcards** — every vocabulary record becomes a two-sided card. Shuffle, prev/next,
   flip, "Know it," and "Review again." Study all terms or one lesson at a time.
-- **Quizzes** — multiple choice, matching, short answer, ordering, calculation, and
-  graph selection. Immediate feedback, with the explanation shown only after you submit.
-  Plus an auto-built vocabulary check per lesson.
+- **Quizzes** — a new full quiz (multiple choice and true/false) for every
+  vocabulary term, plus the original mixed bank (multiple choice, matching, short
+  answer, ordering, calculation, and graph selection). Immediate feedback, with the
+  explanation shown only after you submit. Plus an auto-built vocabulary check per
+  lesson. The original quizzes are unchanged.
 - **Review** — missed questions and flagged terms collect per lesson and can be retried
   on their own.
 - **Progress** — known terms, flagged terms, quiz attempts, best scores, and missed
@@ -59,13 +62,18 @@ data/9th-grade/physical-science.js  course content (lessons, terms, question ban
 Content is fully separated from presentation. Copy
 `data/9th-grade/physical-science.js`, edit the `lessons`, `terms`, and `questions`
 arrays, and add a `<script src>` tag for it in `index.html`. The engine reads whatever
-`window.HC_CONTENT` contains — no changes to `app.js` are needed.
+`window.HC_CONTENT` contains.
+
+Multiple-choice items that belong to the all-topics quiz use `bank: 'topic-mc'`.
+Those appear in **Multiple choice quiz** (all lessons) and each lesson's multiple-choice
+practice set. Items without that flag stay in the mixed-format lesson quiz.
 
 Question formats supported by the engine:
 
 | Format | Answer shape |
 |---|---|
 | `multiple-choice` | `choices: []`, `answer: "…"` |
+| `true-false` | `choices: ["True", "False"]`, `answer: "True"` or `"False"` |
 | `graph-selection` | `choices: []`, `answer: "…"` |
 | `calculation` | `value: 8`, `unit: "g/cm³"`, `tolerance: 0` |
 | `short-answer` | `keywords: [["synonym", "synonym"], …]` — every group must match |
