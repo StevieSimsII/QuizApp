@@ -701,6 +701,232 @@
       ],
       answer: 'Independent on the x-axis; dependent on the y-axis',
       explanation: 'The x-axis is horizontal and holds the independent variable; the y-axis is vertical and holds the dependent variable.'
+    },
+
+    // ---- True / false — same topic check, second format ----
+    {
+      id: 'tf-life-science', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'Life science is the science of living things.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'Life science studies living things.'
+    },
+    {
+      id: 'tf-earth-science', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'Earth science investigates Earth and space.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'Earth science is the branch that investigates Earth and space.'
+    },
+    {
+      id: 'tf-physical-science', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'Physical science studies only living things.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'Physical science studies matter and energy, not living things.'
+    },
+    {
+      id: 'tf-model-change', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A scientific model can change when new evidence is discovered.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'Models represent the best available understanding and should be revised when evidence improves.'
+    },
+    {
+      id: 'tf-atom', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'An atom is the basic unit of matter.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'An atom is a basic unit of matter.'
+    },
+    {
+      id: 'tf-nucleus', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The nucleus contains protons and electrons.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'The nucleus is the center of an atom and contains protons and neutrons.'
+    },
+    {
+      id: 'tf-proton', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A proton is a positively charged particle in the nucleus.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: "A proton is a positively charged particle in an atom's nucleus."
+    },
+    {
+      id: 'tf-neutron', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A neutron has a negative electric charge.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'A neutron has no electric charge.'
+    },
+    {
+      id: 'tf-hypothesis', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A hypothesis is a possible explanation that can be tested.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'A hypothesis is a testable possible answer or explanation.'
+    },
+    {
+      id: 'tf-independent', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The independent variable is what you measure in an experiment.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'You change the independent variable and measure the dependent variable.'
+    },
+    {
+      id: 'tf-dependent', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The dependent variable is what changes in response to the independent variable.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'The dependent variable is the measured result. Memory trick: I measure the Dependent.'
+    },
+    {
+      id: 'tf-control-constant', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A control and a constant are the same thing.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'A control is the comparison standard. A constant is a factor you keep the same.'
+    },
+    {
+      id: 'tf-data', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'Data are recorded observations and information.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'Data are recorded observations and organized measurements from an investigation.'
+    },
+    {
+      id: 'tf-theory-guess', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A scientific theory is just a guess.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'A scientific theory is an explanation supported by many observations and investigations; it is not a guess.'
+    },
+    {
+      id: 'tf-law', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A scientific law describes what consistently happens in nature.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'A scientific law describes a consistent natural pattern. It describes what happens, not why.'
+    },
+    {
+      id: 'tf-theory-becomes-law', lessonId: 'lesson-1', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A scientific theory becomes a scientific law after enough experiments.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'A theory and a law serve different purposes. A theory does not become a law.'
+    },
+    {
+      id: 'tf-si', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'SI stands for International System of Units.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'SI is the standard measurement system used by scientists worldwide.'
+    },
+    {
+      id: 'tf-mass-unit', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The SI unit for mass is the gram.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'The SI base unit for mass is the kilogram (kg).'
+    },
+    {
+      id: 'tf-length-unit', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The SI unit for length is the meter.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'The SI base unit for length is the meter, symbol m.'
+    },
+    {
+      id: 'tf-temp-unit', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The SI unit for temperature is the degree Celsius.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'The SI base unit for thermodynamic temperature is the kelvin (K).'
+    },
+    {
+      id: 'tf-kilo', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The prefix kilo- means 1,000.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'Kilo- means 1,000 times the base unit, or 10³.'
+    },
+    {
+      id: 'tf-milli', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The prefix milli- means 0.01.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'Milli- means 0.001, or one thousandth. Centi- means 0.01.'
+    },
+    {
+      id: 'tf-nano-micro', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'Nano- is a smaller prefix than micro-.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'Micro- means 0.000001 (10⁻⁶). Nano- means 0.000000001 (10⁻⁹), which is smaller.'
+    },
+    {
+      id: 'tf-volume-formula', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The volume of a rectangular solid is length × width × height.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'V = length × width × height.'
+    },
+    {
+      id: 'tf-density-formula', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'Density equals volume divided by mass.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'Density equals mass divided by volume: ρ = m / V.'
+    },
+    {
+      id: 'tf-ml', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: '1 mL equals 1 cm³.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'One milliliter and one cubic centimeter represent the same volume.'
+    },
+    {
+      id: 'tf-matter', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'Matter is anything that takes up space and has mass.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'That is the lesson definition of matter.'
+    },
+    {
+      id: 'tf-mass-volume', lessonId: 'lesson-2', bank: 'topic-mc', format: 'true-false',
+      prompt: 'Mass is the amount of space an object occupies.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'Mass is the quantity of matter in an object. Volume is the amount of space occupied.'
+    },
+    {
+      id: 'tf-bar', lessonId: 'lesson-3', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A bar graph is used to compare categories or data that do not change continuously.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'Bar graphs compare separate categories.'
+    },
+    {
+      id: 'tf-line', lessonId: 'lesson-3', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A line graph is the best choice for showing how a whole is divided into parts.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'A circle graph or pie chart shows parts of a whole. A line graph shows how a dependent variable changes as an independent variable changes.'
+    },
+    {
+      id: 'tf-circle', lessonId: 'lesson-3', bank: 'topic-mc', format: 'true-false',
+      prompt: 'A circle graph shows how a whole is divided into parts.',
+      choices: ['True', 'False'],
+      answer: 'True',
+      explanation: 'A circle graph, or pie chart, shows parts of one fixed whole, usually as percentages.'
+    },
+    {
+      id: 'tf-axes', lessonId: 'lesson-3', bank: 'topic-mc', format: 'true-false',
+      prompt: 'The independent variable is plotted on the y-axis.',
+      choices: ['True', 'False'],
+      answer: 'False',
+      explanation: 'The independent variable goes on the horizontal x-axis. The dependent variable goes on the vertical y-axis.'
     }
   ];
 

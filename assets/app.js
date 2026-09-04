@@ -420,9 +420,9 @@
       h('h2', { class: 'section-label', text: 'Study everything' }),
       h('div', { class: 'card' }, [
         h('p', { style: 'font-size:14px;color:var(--text-dim);margin:0 0 12px',
-          text: topicMcQuestions().length + ' multiple-choice questions covering every highlighted term across Lessons 1–3.' }),
+          text: topicMcQuestions().length + ' multiple-choice and true/false questions covering every highlighted term across Lessons 1–3.' }),
         h('button', {
-          class: 'btn btn--gold btn--block', type: 'button', text: 'Multiple choice quiz',
+          class: 'btn btn--gold btn--block', type: 'button', text: 'Full quiz',
           onclick: function () { startQuiz('mc'); }
         }),
         h('div', { class: 'btn-row', style: 'margin:10px 0' }, [
@@ -658,14 +658,14 @@
 
     append(panel, [
       h('div', { class: 'card' }, [
-        h('h2', { style: 'font-size:17px;font-weight:800;margin-bottom:4px', text: 'Multiple choice quiz' }),
+        h('h2', { style: 'font-size:17px;font-weight:800;margin-bottom:4px', text: 'Full quiz' }),
         h('p', { style: 'font-size:14px;color:var(--text-dim)',
-          text: mcQs.length + ' questions covering every highlighted term in this lesson.' }),
+          text: mcQs.length + ' multiple-choice and true/false questions covering every highlighted term in this lesson.' }),
         h('div', { style: 'font-size:13px;color:var(--text-faint);font-weight:650;margin-bottom:12px',
           text: mcRight + ' of ' + mcQs.length + ' currently correct · ' + mcAnswered + ' attempted' +
             (mcBest != null ? ' · best score ' + mcBest + '%' : '') }),
         h('button', { class: 'btn btn--gold btn--block', type: 'button',
-          text: mcAnswered ? 'Retake multiple choice quiz' : 'Start multiple choice quiz',
+          text: mcAnswered ? 'Retake full quiz' : 'Start full quiz',
           onclick: function () { startQuiz('mc:' + lesson.id); } })
       ]),
       h('div', { class: 'card' }, [
@@ -904,6 +904,7 @@
   // ---------------------------------------------------------
   var FORMAT_LABEL = {
     'multiple-choice': 'Multiple choice',
+    'true-false': 'True or false',
     'matching': 'Matching',
     'short-answer': 'Short answer',
     'ordering': 'Ordering',
@@ -945,9 +946,9 @@
 
   function quizTitle(scope) {
     if (scope === 'mixed') return 'Mixed quiz';
-    if (scope === 'mc') return 'Multiple choice quiz';
+    if (scope === 'mc') return 'Full quiz';
     if (scope.indexOf('mc:') === 0) {
-      return 'Lesson ' + lessonById[scope.slice(3)].number + ' · multiple choice';
+      return 'Lesson ' + lessonById[scope.slice(3)].number + ' · full quiz';
     }
     if (scope === 'missed') return 'Missed concepts';
     if (scope.indexOf('missed:') === 0) return 'Lesson ' + lessonById[scope.slice(7)].number + ' · missed';
@@ -1013,6 +1014,7 @@
   function buildAnswerUI(q) {
     switch (q.format) {
       case 'multiple-choice':
+      case 'true-false':
       case 'graph-selection': return uiChoices(q);
       case 'calculation': return uiCalculation(q);
       case 'short-answer': return uiShortAnswer(q);
@@ -1169,6 +1171,7 @@
     var r = session.response;
     switch (q.format) {
       case 'multiple-choice':
+      case 'true-false':
       case 'graph-selection':
         return r === q.answer;
       case 'calculation':

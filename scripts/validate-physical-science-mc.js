@@ -26,10 +26,19 @@ var ids = {};
 mc.forEach(function (q) {
   if (ids[q.id]) fail('Duplicate id: ' + q.id);
   ids[q.id] = true;
-  if (q.format !== 'multiple-choice') fail(q.id + ' is not multiple-choice');
+  if (q.format !== 'multiple-choice' && q.format !== 'true-false') {
+    fail(q.id + ' must be multiple-choice or true-false');
+  }
   if (!q.prompt) fail(q.id + ' missing prompt');
   if (!q.explanation) fail(q.id + ' missing explanation');
-  if (!Array.isArray(q.choices) || q.choices.length < 3) fail(q.id + ' needs at least 3 choices');
+  var minChoices = q.format === 'true-false' ? 2 : 3;
+  if (!Array.isArray(q.choices) || q.choices.length < minChoices) {
+    fail(q.id + ' needs at least ' + minChoices + ' choices');
+  }
+  if (q.format === 'true-false') {
+    var tfOk = q.choices.indexOf('True') !== -1 && q.choices.indexOf('False') !== -1;
+    if (!tfOk) fail(q.id + ' true-false must use True/False choices');
+  }
   if (q.choices.indexOf(q.answer) === -1) fail(q.id + ' answer is not in choices: ' + q.answer);
   var seen = {};
   q.choices.forEach(function (c) {
@@ -98,7 +107,9 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log('OK — ' + mc.length + ' multiple-choice questions');
+var mcCount = mc.filter(function (q) { return q.format === 'multiple-choice'; }).length;
+var tfCount = mc.filter(function (q) { return q.format === 'true-false'; }).length;
+console.log('OK — ' + mc.length + ' topic-check questions (' + mcCount + ' multiple-choice, ' + tfCount + ' true/false)');
 console.log('  Lesson 1: ' + byLesson['lesson-1']);
 console.log('  Lesson 2: ' + byLesson['lesson-2']);
 console.log('  Lesson 3: ' + byLesson['lesson-3']);
