@@ -415,6 +415,18 @@ type StudyProgress = {
 
 ---
 
+## Multiple-choice topic check
+
+A second question bank (`bank: 'topic-mc'` in `data/9th-grade/physical-science.js`) turns every highlighted term into a four-choice item. It covers:
+
+- Methods of Science: branches, models, atom parts, scientific-method sequence, hypothesis, control, independent/dependent variables, constants, data, conclusion, theory vs. law
+- Standards of Measurement: SI, all seven base units, all six metric prefixes, volume and density formulas, `1 mL = 1 cm³`, matter, mass, and density
+- Graphs: bar, line, and circle graphs, plus when to use each and where variables go on the axes
+
+The home screen **Multiple choice quiz** shuffles the full set. Each lesson Practice tab also has a lesson-only multiple-choice run. Meanings match the vocabulary table above; no extra textbook claims were added.
+
+---
+
 ## Source notes
 
 - Primary lesson source: McGraw Hill Physical Science eBook, Lessons 1-3 — *The Methods of Science*, *Standards of Measurement*, and *Communicating with Graphs*.
