@@ -303,6 +303,41 @@ a { color: var(--accent); }
 }
 .lesson-card__meta .bar { flex: 1; }
 
+/* ---------- Course picker ---------- */
+.course-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.course-chip {
+  display: block; width: 100%; text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px 14px;
+  min-height: var(--tap);
+  transition: transform 0.12s, border-color 0.15s, box-shadow 0.15s;
+}
+.course-chip:active { transform: scale(0.985); }
+.course-chip--active {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(180, 143, 64, 0.28), var(--shadow);
+}
+.course-chip__year {
+  display: block;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--gold-text);
+}
+.course-chip__title {
+  display: block;
+  font-size: 15px; font-weight: 700; margin-top: 2px;
+}
+.course-chip__tag {
+  display: block;
+  font-size: 12.5px; color: var(--text-faint); margin-top: 2px;
+}
+
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;

@@ -5,7 +5,7 @@ flashcards, and interactive quizzes. Built for iPhone first, with light and dark
 drawn from the school's own brand colors (navy `#0c2340`, gold `#b48f40`, taken from
 hcnola.org).
 
-**Current course: 9th Grade — Physical Science, Lessons 1–3.**
+**Courses:** 9th Grade — Physical Science, Lessons 1–3; and English Vocabulary — Set 1. Switch courses from the home screen.
 
 ## Running it
 
@@ -52,7 +52,8 @@ flips, `←`/`→` move, `K` marks known, `R` flags for review), and
 index.html                          app shell
 assets/app.css                      design system, light + dark themes
 assets/app.js                       engine — routing, flashcards, quiz, grading, storage
-data/9th-grade/physical-science.js  course content (lessons, terms, question bank)
+data/9th-grade/physical-science.js  Physical Science course (lessons, terms, question bank)
+data/english/vocab-set-1.js         English Vocabulary — Set 1
 9th_Grade/Physical_Science/         source brief and reference material
 8th_Grade/                          previous year's source material
 ```
@@ -60,9 +61,11 @@ data/9th-grade/physical-science.js  course content (lessons, terms, question ban
 ## Adding a lesson or a course
 
 Content is fully separated from presentation. Copy
-`data/9th-grade/physical-science.js`, edit the `lessons`, `terms`, and `questions`
-arrays, and add a `<script src>` tag for it in `index.html`. The engine reads whatever
-`window.HC_CONTENT` contains.
+`data/9th-grade/physical-science.js` or `data/english/vocab-set-1.js`, edit the
+`lessons`, `terms`, and `questions` arrays, and add a `<script src>` tag for it in
+`index.html`. Each file should `push` a course onto `window.HC_CONTENT.courses`.
+The engine reads that catalog and shows a course picker on the home screen when more
+than one course is loaded. Progress is stored separately per course.
 
 Multiple-choice items that belong to the all-topics quiz use `bank: 'topic-mc'`.
 Those appear in **Multiple choice quiz** (all lessons) and each lesson's multiple-choice
