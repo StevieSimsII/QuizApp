@@ -52,30 +52,31 @@
   function pct(n, d) { return d ? Math.round((n / d) * 100) : 0; }
 
   // ---------------------------------------------------------
-  // Content index
-  // ---------------------------------------------------------
-  var course = (window.HC_CONTENT && window.HC_CONTENT.courses[0]) || null;
-  if (!course) return;
-
-  var termById = {};
-  course.terms.forEach(function (t) { termById[t.id] = t; });
-  var questionById = {};
-  course.questions.forEach(function (q) { questionById[q.id] = q; });
-  var lessonById = {};
-  course.lessons.forEach(function (l) { lessonById[l.id] = l; });
-
-  // ---------------------------------------------------------
   // Persistence
   // ---------------------------------------------------------
-  var STORE_KEY = 'hc-study.' + course.id + '.v1';
   var THEME_KEY = 'hc-study.theme';
+  var COURSE_KEY = 'hc-study.active-course';
 
   var blank = {
     knownTermIds: [], reviewTermIds: [],
     questionAttempts: {}, bestQuizScore: {}, lastStudiedLessonId: null
   };
 
-  var progress = load();
+  // ---------------------------------------------------------
+  // Content index — every data file pushes onto HC_CONTENT.courses.
+  // Progress is stored per course id, so switching never mixes scores.
+  // ---------------------------------------------------------
+  var catalog = (window.HC_CONTENT && window.HC_CONTENT.courses) || [];
+  if (!catalog.length) return;
+
+  var course = null;
+  var termById = {};
+  var questionById = {};
+  var lessonById = {};
+  var STORE_KEY = '';
+  var progress = JSON.parse(JSON.stringify(blank));
+  var session = null;
+  var deck = null;
 
   function load() {
     try {
@@ -124,6 +125,43 @@
     // A later correct answer clears the miss; a later miss on a mastered item re-flags it.
     progress.questionAttempts[qid].correct = correct;
     save();
+  }
+
+  function findCourse(id) {
+    if (!id) return null;
+    for (var i = 0; i < catalog.length; i++) {
+      if (catalog[i].id === id) return catalog[i];
+    }
+    return null;
+  }
+
+  function savedCourseId() {
+    try { return localStorage.getItem(COURSE_KEY); } catch (e) { return null; }
+  }
+
+  function activateCourse(next) {
+    if (!next) return;
+    course = next;
+    course.readerUrl = course.readerUrl || null;
+    try { localStorage.setItem(COURSE_KEY, course.id); } catch (e) { /* ignore */ }
+    termById = {};
+    course.terms.forEach(function (t) { termById[t.id] = t; });
+    questionById = {};
+    course.questions.forEach(function (q) { questionById[q.id] = q; });
+    lessonById = {};
+    course.lessons.forEach(function (l) { lessonById[l.id] = l; });
+    STORE_KEY = 'hc-study.' + course.id + '.v1';
+    progress = load();
+  }
+
+  function switchCourse(id) {
+    var next = findCourse(id);
+    if (!next || (course && next.id === course.id)) return;
+    session = null;
+    deck = null;
+    activateCourse(next);
+    go({ name: 'home' }, true);
+    toast(course.subject);
   }
 
   function missedQuestionIds() {
@@ -252,8 +290,6 @@
   // App state + routing
   // ---------------------------------------------------------
   var view = { name: 'home' };
-  var session = null; // active quiz
-  var deck = null;    // active flashcard deck
 
   var root = document.getElementById('view');
   var actionbar = document.getElementById('actionbar');
@@ -272,16 +308,36 @@
   }
 
   function encodeHash(v) {
+    var prefix = '/c/' + course.id;
     switch (v.name) {
-      case 'lesson': return '/lesson/' + v.lessonId + '/' + (v.tab || 'overview');
-      case 'flash': return '/flashcards/' + (v.scope || 'all');
-      case 'quiz': return '/quiz/' + (v.scope || 'mixed');
-      default: return '/';
+      case 'lesson': return prefix + '/lesson/' + v.lessonId + '/' + (v.tab || 'overview');
+      case 'flash': return prefix + '/flashcards/' + (v.scope || 'all');
+      case 'quiz': return prefix + '/quiz/' + (v.scope || 'mixed');
+      default: return prefix + '/';
     }
   }
 
   function readHash() {
     var parts = (location.hash || '#/').replace(/^#\/?/, '').split('/').filter(Boolean);
+    var hashCourseId = null;
+    if (parts[0] === 'c' && parts[1]) {
+      hashCourseId = parts[1];
+      parts = parts.slice(2);
+    }
+    var nextCourse = findCourse(hashCourseId) || findCourse(savedCourseId()) || catalog[0];
+    if (!course || course.id !== nextCourse.id) {
+      session = null;
+      deck = null;
+      activateCourse(nextCourse);
+    }
+
+    if (!hashCourseId && parts[0] === 'lesson' && parts[1] && !lessonById[parts[1]]) {
+      for (var ci = 0; ci < catalog.length; ci++) {
+        var hit = catalog[ci].lessons.some(function (l) { return l.id === parts[1]; });
+        if (hit) { activateCourse(catalog[ci]); break; }
+      }
+    }
+
     if (parts[0] === 'lesson' && lessonById[parts[1]]) {
       return { name: 'lesson', lessonId: parts[1], tab: parts[2] || 'overview' };
     }
@@ -377,6 +433,24 @@
     var missed = missedQuestionIds().length;
     var overall = overallProgress();
 
+    var switcher = catalog.length > 1 ? h('div', {}, [
+      h('h2', { class: 'section-label', style: 'margin-top:16px', text: 'Courses' }),
+      h('div', { class: 'course-switch', role: 'group', 'aria-label': 'Choose a course' },
+        catalog.map(function (c) {
+          var active = c.id === course.id;
+          return h('button', {
+            class: 'course-chip' + (active ? ' course-chip--active' : ''),
+            type: 'button',
+            'aria-pressed': active ? 'true' : 'false',
+            onclick: function () { switchCourse(c.id); }
+          }, [
+            h('span', { class: 'course-chip__year', text: c.year }),
+            h('span', { class: 'course-chip__title', text: c.subject }),
+            h('span', { class: 'course-chip__tag', text: c.tagline })
+          ]);
+        }))
+    ]) : null;
+
     var hero = h('section', { class: 'hero' }, [
       h('div', { class: 'hero__year', text: course.year }),
       h('h1', { class: 'hero__title', text: course.subject }),
@@ -413,14 +487,19 @@
       ]);
     });
 
+    var mixedCount = coreQuestions().length;
+    var mcCount = topicMcQuestions().length;
+    var studyCopy = mcCount + ' multiple-choice and true/false questions covering every highlighted term in this course.';
+
     append(root, [
+      switcher,
       hero,
       h('h2', { class: 'section-label', text: 'Lessons' }),
       h('div', {}, lessonCards),
       h('h2', { class: 'section-label', text: 'Study everything' }),
       h('div', { class: 'card' }, [
         h('p', { style: 'font-size:14px;color:var(--text-dim);margin:0 0 12px',
-          text: topicMcQuestions().length + ' multiple-choice and true/false questions covering every highlighted term across Lessons 1–3.' }),
+          text: studyCopy }),
         h('button', {
           class: 'btn btn--gold btn--block', type: 'button', text: 'Full quiz',
           onclick: function () { startQuiz('mc'); }
@@ -428,8 +507,8 @@
         h('div', { class: 'btn-row', style: 'margin:10px 0' }, [
           h('button', { class: 'btn btn--primary', type: 'button', text: 'All flashcards',
             onclick: function () { startDeck('all'); } }),
-          h('button', { class: 'btn btn--subtle', type: 'button', text: 'Mixed formats',
-            onclick: function () { startQuiz('mixed'); } })
+          mixedCount ? h('button', { class: 'btn btn--subtle', type: 'button', text: 'Mixed formats',
+            onclick: function () { startQuiz('mixed'); } }) : null
         ]),
         h('button', {
           class: 'btn btn--subtle btn--block', type: 'button',
@@ -668,7 +747,7 @@
           text: mcAnswered ? 'Retake full quiz' : 'Start full quiz',
           onclick: function () { startQuiz('mc:' + lesson.id); } })
       ]),
-      h('div', { class: 'card' }, [
+      qs.length ? h('div', { class: 'card' }, [
         h('h2', { style: 'font-size:17px;font-weight:800;margin-bottom:4px', text: 'Lesson quiz' }),
         h('p', { style: 'font-size:14px;color:var(--text-dim)',
           text: qs.length + ' mixed-format questions from the lesson question bank. Feedback appears after each answer.' }),
@@ -678,7 +757,7 @@
         h('button', { class: 'btn btn--primary btn--block', type: 'button',
           text: answered ? 'Retake lesson quiz' : 'Start lesson quiz',
           onclick: function () { startQuiz(lesson.id); } })
-      ]),
+      ]) : null,
       h('div', { class: 'card' }, [
         h('h2', { style: 'font-size:17px;font-weight:800;margin-bottom:4px', text: 'Vocabulary check' }),
         h('p', { style: 'font-size:14px;color:var(--text-dim)',
@@ -686,12 +765,12 @@
         h('button', { class: 'btn btn--subtle btn--block', type: 'button', text: 'Start vocabulary check',
           onclick: function () { startQuiz('vocab:' + lesson.id); } })
       ]),
-      h('div', { class: 'card' }, [
+      uniqueFormats(qs).length ? h('div', { class: 'card' }, [
         h('h2', { style: 'font-size:17px;font-weight:800;margin-bottom:4px', text: 'Question formats' }),
         h('ul', { class: 'key-list', style: 'margin-top:8px' }, uniqueFormats(qs).map(function (f) {
           return h('li', { text: FORMAT_LABEL[f] || f });
         }))
-      ])
+      ]) : null
     ]);
   }
 
@@ -1324,7 +1403,6 @@
   // ---------------------------------------------------------
   // Boot
   // ---------------------------------------------------------
-  course.readerUrl = course.readerUrl || null;
   applyTheme();
   syncThemeButton();
   themeBtn.addEventListener('click', cycleTheme);
